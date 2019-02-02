@@ -7,32 +7,43 @@ __email__ = "Timothy.Polizzi1@marist.edu"
 
 
 class TextNode:  # Nodes, that have a string stored in them
-    def __init__(self):
-        self.val = ""
-        self.next = ""
-
-    def __init__(self, text, next_node):
-        self.val = text
-        self.next = next_node
+    def __init__(self, *args):  # Constructor
+        if len(args) == 0:  # Constructor for an empty call of TextNode
+            self.val = ""
+            self.next = ""
+        elif len(args) == 2:  # Constructor for TextNode with predefined text and next node
+            internal_text = args[0]
+            next_node = args[1]
+            self.val = internal_text
+            self.next = next_node
 
 
 class MyLinkedList:  # A linked list that i've made
     def __init__(self):
-        self.head = TextNode()
+        self.head = None
 
-# My easy traversal to a TextNode which has some text
-    def traverse(self, text_to_visit):
-        current_node = self.head
-        while current_node.val != text_to_visit:
-            current_node = current_node.next
+    def traverse(self, *args):
+        if not self.is_empty():
+            current_node = self.head
+
+            if len(args) == 1:  # Traversal to find a particular TextNode
+                text_to_visit = args[0]
+                while current_node.val is not text_to_visit:
+                    current_node = current_node.next
+            elif len(args) == 0:  # Traversal to find the last node in the list
+                    while current_node.next is not None:
+                        current_node = current_node.next
+        else:
+            current_node = None
+
         return current_node
 
-# My easy traversal to the last TextNode
-    def traverse(self):
-        current_node = self.head
-        while current_node.next.val is not None:
-            current_node = current_node.next
-        return current_node
+# checks if the list is empty
+    def is_empty(self):
+        to_return = False
+        if self.head is None:
+            to_return = True
+        return to_return
 
 # Add a node to the front
     def add_to_front(self, text):
@@ -41,12 +52,18 @@ class MyLinkedList:  # A linked list that i've made
 
 # Add a node to the end
     def add_to_end(self, text):
-        last_node = self.traverse()
         new_node = TextNode(text, None)
-        last_node.next = new_node
+        if self.is_empty():
+            self.head = new_node
+        else:
+            last_node = self.traverse()
+            last_node.next = new_node
 
-
-init = MyLinkedList()
-
-print(init.head)
-
+# Remove a node from the front
+    def remove_from_front(self):
+        if self.is_empty():
+            raise Exception('List is empty')
+        else:
+            old_head_val = self.head.val
+            self.head = self.head.next
+            return old_head_val
