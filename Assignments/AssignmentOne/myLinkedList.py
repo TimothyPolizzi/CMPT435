@@ -6,19 +6,19 @@ __author__ = "Tim Polizzi"
 __email__ = "Timothy.Polizzi1@marist.edu"
 
 
-class TextNode:  # Nodes, that have a string stored in them
-    def __init__(self, *args):  # Constructor
-        if len(args) == 0:  # Constructor for an empty call of TextNode
+class TextNode:                     # Nodes, that have a string stored in them
+    def __init__(self, *args):      # Constructor
+        if len(args) == 0:          # Constructor for an empty call of TextNode
             self.val = ""
             self.next = ""
-        elif len(args) == 2:  # Constructor for TextNode with predefined text and next node
+        elif len(args) == 2:        # Constructor for TextNode with predefined text and next node
             internal_text = args[0]
             next_node = args[1]
             self.val = internal_text
             self.next = next_node
 
 
-class MyLinkedList:  # A linked list that i've made
+class MyLinkedList:                 # A linked list that i've made
     def __init__(self):
         self.head = None
 
@@ -26,11 +26,11 @@ class MyLinkedList:  # A linked list that i've made
         if not self.is_empty():
             current_node = self.head
 
-            if len(args) == 1:  # Traversal to find a particular TextNode
+            if len(args) == 1:      # Traversal to find a particular TextNode
                 text_to_visit = args[0]
                 while current_node.val is not text_to_visit:
                     current_node = current_node.next
-            elif len(args) == 0:  # Traversal to find the last node in the list
+            elif len(args) == 0:    # Traversal to find the last node in the list
                     while current_node.next is not None:
                         current_node = current_node.next
         else:
