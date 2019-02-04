@@ -11,13 +11,15 @@ from FileReader import read_file
 import re
 
 
+# clean up that hellish string (ew, +4 gear?) that i pull from whatever text file is supplied
 def string_cleaner(string_to_clean):
     updated_string_to_clean = string_to_clean[0:-1].lower()
-    regex = re.compile('[^a-zA-Z]')
+    regex = re.compile('[^a-zA-Z]')         # long story short, I didn't wanna elif the alphabet
     final_cleaned_string = regex.sub('', updated_string_to_clean)
     return final_cleaned_string
 
 
+# check a string to see if its a palindrome. This doesn't care what goes in, clean or not
 def check_for_palindrome(string_to_check):
     character_list = list(string_to_check)
 
@@ -30,7 +32,8 @@ def check_for_palindrome(string_to_check):
 
     counter = 0
     stack_and_queue_are_equal = True
-
+# just check that there if the last letter has been hit or if the stack and queue don't match
+    # (cuz they aren't palindromes if they don't match)
     while counter < character_list.__len__() and stack_and_queue_are_equal:
         counter += 1
         stack_char = stack.pop()
@@ -40,6 +43,7 @@ def check_for_palindrome(string_to_check):
     return stack_and_queue_are_equal
 
 
+# run my check for palindromes on a file who's path has been supplied
 def check_file_for_palindromes(file_to_read):
     array_of_strings = read_file(file_to_read)
     for string in array_of_strings:
