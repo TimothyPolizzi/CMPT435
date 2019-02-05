@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57c776bd-bc12-453a-8147-4f10e126c8cd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/CMPT435.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CMPT435.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignments/AssignmentOne/FileReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentOne/FileReader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignments/AssignmentOne/PalindromeCheck.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentOne/PalindromeCheck.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignments/AssignmentOne/myLinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentOne/myLinkedList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignments/AssignmentOne/myQueue.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentOne/myQueue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignments/AssignmentOne/myStack.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentOne/myStack.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignments/AssignmentOne/tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentOne/tester.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,14 +19,14 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/CMPT435$myStack.coverage" NAME="myStack Coverage Results" MODIFIED="1549139167757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentOne" />
-    <SUITE FILE_PATH="coverage/CMPT435$tester.coverage" NAME="tester Coverage Results" MODIFIED="1549142336214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentOne" />
+    <SUITE FILE_PATH="coverage/CMPT435$tester.coverage" NAME="tester Coverage Results" MODIFIED="1549397902028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentOne" />
     <SUITE FILE_PATH="coverage/CMPT435$myLinkedList.coverage" NAME="myLinkedList Coverage Results" MODIFIED="1549138371898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentOne" />
     <SUITE FILE_PATH="coverage/CMPT435$FileReader.coverage" NAME="FileReader Coverage Results" MODIFIED="1549313680592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentOne" />
-    <SUITE FILE_PATH="coverage/CMPT435$PalindromeCheck.coverage" NAME="PalindromeCheck Coverage Results" MODIFIED="1549317376132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentOne" />
+    <SUITE FILE_PATH="coverage/CMPT435$PalindromeCheck.coverage" NAME="PalindromeCheck Coverage Results" MODIFIED="1549397396987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentOne" />
     <SUITE FILE_PATH="coverage/CMPT435$myQueue.coverage" NAME="myQueue Coverage Results" MODIFIED="1549141063764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentOne" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -35,16 +42,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assignments/AssignmentOne/__init__.py" />
-        <option value="$PROJECT_DIR$/Assignments/AssignmentOne/tester.py" />
-        <option value="$PROJECT_DIR$/Assignments/AssignmentOne/myLinkedList.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentOne/myQueue.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentOne/myStack.py" />
+        <option value="$PROJECT_DIR$/Assignments/AssignmentOne/tester.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentOne/FileReader.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentOne/PalindromeCheck.py" />
+        <option value="$PROJECT_DIR$/Assignments/AssignmentOne/myLinkedList.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
@@ -56,7 +63,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -79,6 +85,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -86,6 +93,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -104,7 +112,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.PalindromeCheck">
+  <component name="RunManager" selected="Python.tester">
     <configuration name="FileReader" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CMPT435" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -217,9 +225,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tester" />
         <item itemvalue="Python.PalindromeCheck" />
         <item itemvalue="Python.FileReader" />
-        <item itemvalue="Python.tester" />
         <item itemvalue="Python.myQueue" />
         <item itemvalue="Python.myStack" />
       </list>
@@ -237,16 +245,18 @@
       <updated>1549042178908</updated>
       <workItem from="1549042181409" duration="9655000" />
       <workItem from="1549311714746" duration="6006000" />
+      <workItem from="1549382207854" duration="336000" />
+      <workItem from="1549392661842" duration="6315000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15661000" />
+    <option name="totallyTimeSpent" value="22312000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536349" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26171243" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -284,17 +294,17 @@
     <entry file="file://$PROJECT_DIR$/Assignments/AssignmentOne/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentOne/myQueue.py">
+    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentOne/myLinkedList.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        <state relative-caret-position="1575">
+          <caret line="105" column="67" selection-start-line="105" selection-start-column="67" selection-end-line="105" selection-end-column="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/AssignmentOne/tester.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="915">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="e#139#176#0" expanded="true" />
           </folding>
@@ -303,32 +313,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/AssignmentOne/FileReader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="83" selection-start-line="16" selection-start-column="83" selection-end-line="16" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentOne/myStack.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentOne/myLinkedList.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="225">
+          <caret line="15" column="78" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="78" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/AssignmentOne/PalindromeCheck.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state>
+          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
           <folding>
             <element signature="e#117#144#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentOne/myStack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentOne/myQueue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
         </state>
       </provider>
     </entry>

@@ -8,10 +8,25 @@ __email__ = "Timothy.Polizzi1@marist.edu"
 from myLinkedList import MyLinkedList
 from myQueue import MyQueue
 from myStack import MyStack
+from PalindromeCheck import check_file_for_palindromes
 
 my_list = MyLinkedList()
 queue = MyQueue()
 stack = MyStack()
+
+
+def main():
+    # test_add_to_front()
+    # test_add_to_end()
+    # test_traverse()
+    # test_remove()
+    # test_dequeue()
+    # test_pop()
+    test_run('')
+
+
+def test_run(test_path):
+    check_file_for_palindromes(test_path)
 
 
 def test_add_to_front():
@@ -42,22 +57,23 @@ def test_traverse():
 def test_remove():
     print(my_list.remove_from_front())
     print(my_list.remove_from_front())
+    print(my_list.remove_from_front())
+    # print(my_list.remove_from_front())
 
 
 def test_dequeue():
     print(queue.dequeue())
     print(queue.dequeue())
+    print(queue.dequeue())
+    # print(queue.dequeue())
 
 
 def test_pop():
-    print(stack.pop())
-    print(stack.pop())
+    print(stack.pop)
+    print(stack.pop)
+    print(stack.pop)
+    # print(stack.pop)
 
 
-test_add_to_front()
-test_add_to_end()
-test_traverse()
-test_remove()
-test_dequeue()
-test_pop()
-
+if __name__ == '__main__':
+    main()

@@ -11,16 +11,37 @@ from FileReader import read_file
 import re
 
 
-# clean up that hellish string (ew, +4 gear?) that i pull from whatever text file is supplied
 def string_cleaner(string_to_clean):
-    updated_string_to_clean = string_to_clean[0:-1].lower()
-    regex = re.compile('[^a-zA-Z]')         # long story short, I didn't wanna elif the alphabet
-    final_cleaned_string = regex.sub('', updated_string_to_clean)
+    """Cleans a string that is to be checked if it is a palindrome.
+
+    Takes a string and removes any non-alphabet characters from it.
+
+    Args:
+        string_to_clean(String): The string that is to have any non-alphabetic characters removed from it.
+
+    Returns:
+        string_to_clean after it has had all non-alphabetic characters removed from it.
+    """
+    updated_string_to_clean = string_to_clean[0:-1].lower()  # This removes the annoying little \n tag
+
+    # I didn't want to use an external library but I REALLY did not want to write all those elifs
+
+    regex = re.compile('[^a-zA-Z]')
+    final_cleaned_string = regex.sub('', updated_string_to_clean)  # Put it all back together
     return final_cleaned_string
 
 
-# check a string to see if its a palindrome. This doesn't care what goes in, clean or not
 def check_for_palindrome(string_to_check):
+    """Checks a string to see if it is a palindrome.
+
+    Takes a string and checks to see if the spelling is the same going forward as it is backward.
+
+    Args:
+        string_to_check(String): The string that is to be checked to see if it is a palindrome.
+
+    Returns:
+        A bool that is True if string_to_check is a palindrome, False otherwise.
+    """
     character_list = list(string_to_check)
 
     stack = MyStack()
@@ -43,8 +64,15 @@ def check_for_palindrome(string_to_check):
     return stack_and_queue_are_equal
 
 
-# run my check for palindromes on a file who's path has been supplied
 def check_file_for_palindromes(file_to_read):
+    """Takes a text file and checks if any of the words in it are palindromes.
+
+    Takes a given file and scans it of all words, then checks each word individually to see if is a palindrome.
+    If a palindrome is found, the palindrome will be printed in the terminal.
+
+    Args:
+        file_to_read(String): The path to the file to be checked for palindromes.
+    """
     array_of_strings = read_file(file_to_read)
     for string in array_of_strings:
         corrected_string = string_cleaner(string)
@@ -52,4 +80,5 @@ def check_file_for_palindromes(file_to_read):
             print(string)
 
 
-check_file_for_palindromes()
+# This method is to run the code, just put the path in the strings to the file you want to check.
+check_file_for_palindromes("")
