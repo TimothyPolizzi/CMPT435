@@ -1,4 +1,4 @@
-# A stack for project1 of CMPT435
+# A stack for project1 of CMPT435.
 
 __author__ = "Tim Polizzi"
 __email__ = "Timothy.Polizzi1@marist.edu"

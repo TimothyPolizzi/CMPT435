@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Project1 for CMPT435
+# Project1 for CMPT435.
 
 __author__ = "Tim Polizzi"
 __email__ = "Timothy.Polizzi1@marist.edu"
@@ -81,4 +81,4 @@ def check_file_for_palindromes(file_to_read):
 
 
 # This method is to run the code, just put the path in the strings to the file you want to check.
-check_file_for_palindromes("")
+# check_file_for_palindromes("")

@@ -1,4 +1,4 @@
-# A way to read a file of strings into an array
+# A way to read a file of strings into an array.
 
 __author__ = "Tim Polizzi"
 __email__ = "Timothy.Polizzi1@marist.edu"
