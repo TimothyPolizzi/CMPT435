@@ -1,4 +1,4 @@
-# A linked list written for the intention of making it into a stack or queue
+# A linked list written for the intention of making it into a stack or queue.
 
 __author__ = "Tim Polizzi"
 __email__ = "Timothy.Polizzi1@marist.edu"
@@ -69,6 +69,30 @@ class MyLinkedList:
             current_node = None
 
         return current_node
+
+    def evil_traversal(self, to_find):
+        """Recursively traverses through MyLinkedList.
+
+        Runs a recursive traversal through MyLinkedList that will find the first node who's value
+        is equal to to_find, or find the last node.
+
+        Args:
+            to_find: The value of the node to be searched for.
+
+        Returns:
+            The first node who's value is equal to to_find or the last node in MyLinkedList if there are no nodes
+            with values that match to_find.
+        """
+        if self.is_empty():
+            raise Exception('List is empty')
+
+        return self._real_evil_traversal(to_find, self.head)
+
+    def _real_evil_traversal(self, to_find, current_node):
+        if current_node.val is to_find or current_node.next is None:
+            return current_node
+
+        return self._real_evil_traversal(to_find, current_node.next)
 
     def is_empty(self):
         """Returns True if MyLinkedList contains no TextNodes, False otherwise"""
