@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# A pit of test code for project1 of CMPT435
+# A pit of test code for project1 of CMPT435.
 
 __author__ = "Tim Polizzi"
 __email__ = "Timothy.Polizzi1@marist.edu"
@@ -17,12 +17,13 @@ stack = MyStack()
 
 def main():
     # test_add_to_front()
-    # test_add_to_end()
+    test_add_to_end()
     # test_traverse()
+    test_evil()
     # test_remove()
     # test_dequeue()
     # test_pop()
-    test_run('')
+    # test_run('')
 
 
 def test_run(test_path):
@@ -73,6 +74,12 @@ def test_pop():
     print(stack.pop)
     print(stack.pop)
     # print(stack.pop)
+
+
+def test_evil():
+    print(my_list.evil_traversal("three").val)
+    print(my_list.evil_traversal("one").val)
+    print(my_list.evil_traversal("four").val)
 
 
 if __name__ == '__main__':
