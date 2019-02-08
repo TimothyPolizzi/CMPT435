@@ -3,8 +3,10 @@
 __author__ = "Tim Polizzi"
 __email__ = "Timothy.Polizzi1@marist.edu"
 
+from typing import List
 
-def read_file(path_to_file):
+
+def read_file(path_to_file: str) -> List[str]:
     """Reads a text file into an array.
 
     Reads each line of a text file into entries in an array.

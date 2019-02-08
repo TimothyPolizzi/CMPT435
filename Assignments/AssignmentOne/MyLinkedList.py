@@ -4,7 +4,7 @@ __author__ = "Tim Polizzi"
 __email__ = "Timothy.Polizzi1@marist.edu"
 
 
-class MyLinkedList:
+class MyLinkedList(object):
     """A linked list generated without the assistance of external libraries for CMPT435.
 
     A linked list generated separate from any pre-existing libraries, for the purpose of learning how to use
@@ -70,7 +70,7 @@ class MyLinkedList:
 
         return current_node
 
-    def evil_traversal(self, to_find):
+    def evil_traversal(self, to_find: str) -> TextNode:
         """Recursively traverses through MyLinkedList.
 
         Runs a recursive traversal through MyLinkedList that will find the first node who's value
@@ -88,20 +88,20 @@ class MyLinkedList:
 
         return self._real_evil_traversal(to_find, self.head)
 
-    def _real_evil_traversal(self, to_find, current_node):
+    def _real_evil_traversal(self, to_find: str, current_node: TextNode) -> TextNode:
         if current_node.val is to_find or current_node.next is None:
             return current_node
 
         return self._real_evil_traversal(to_find, current_node.next)
 
-    def is_empty(self):
+    def is_empty(self) -> bool:
         """Returns True if MyLinkedList contains no TextNodes, False otherwise"""
         to_return = False
         if self.head is None:
             to_return = True
         return to_return
 
-    def add_to_front(self, text):
+    def add_to_front(self, text: str):
         """Appends a TextNode to the front of MyLinkedList
 
         Args:
@@ -110,7 +110,7 @@ class MyLinkedList:
         new_node = self.TextNode(text, self.head)
         self.head = new_node
 
-    def add_to_end(self, text):
+    def add_to_end(self, text: str):
         """Appends a TextNode to the end of MyLinkedList
 
         Args:
@@ -123,7 +123,7 @@ class MyLinkedList:
             last_node = self.traverse()
             last_node.next = new_node
 
-    def remove_from_front(self):
+    def remove_from_front(self) -> str:
         """Removes the first node from MyLinkedList
 
         Returns:

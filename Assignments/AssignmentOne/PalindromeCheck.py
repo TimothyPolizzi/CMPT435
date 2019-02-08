@@ -5,13 +5,13 @@
 __author__ = "Tim Polizzi"
 __email__ = "Timothy.Polizzi1@marist.edu"
 
-from myStack import MyStack
-from myQueue import MyQueue
-from FileReader import read_file
+from Assignments.AssignmentOne.MyStack import MyStack
+from Assignments.AssignmentOne.MyQueue import MyQueue
+from Assignments.AssignmentOne.FileReader import read_file
 import re
 
 
-def string_cleaner(string_to_clean):
+def string_cleaner(string_to_clean: str) -> str:
     """Cleans a string that is to be checked if it is a palindrome.
 
     Takes a string and removes any non-alphabet characters from it.
@@ -31,7 +31,7 @@ def string_cleaner(string_to_clean):
     return final_cleaned_string
 
 
-def check_for_palindrome(string_to_check):
+def check_for_palindrome(string_to_check: str) -> bool:
     """Checks a string to see if it is a palindrome.
 
     Takes a string and checks to see if the spelling is the same going forward as it is backward.
@@ -64,7 +64,7 @@ def check_for_palindrome(string_to_check):
     return stack_and_queue_are_equal
 
 
-def check_file_for_palindromes(file_to_read):
+def check_file_for_palindromes(file_to_read: str):
     """Takes a text file and checks if any of the words in it are palindromes.
 
     Takes a given file and scans it of all words, then checks each word individually to see if is a palindrome.

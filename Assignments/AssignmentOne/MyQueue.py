@@ -3,7 +3,7 @@
 __author__ = "Tim Polizzi"
 __email__ = "Timothy.Polizzi1@marist.edu"
 
-from myLinkedList import MyLinkedList
+from Assignments.AssignmentOne.MyLinkedList import MyLinkedList
 
 
 class MyQueue(object):
@@ -16,20 +16,17 @@ class MyQueue(object):
         """Initializes MyQueue"""
         self.inner_list = MyLinkedList()
 
-    def enqueue(self, to_enqueue):
+    def enqueue(self, to_enqueue: str):
         """Adds an item to MyQueue.
 
         Appends an item to the end of MyQueue.
 
         Args:
             to_enqueue: The item that is to be appended to MyQueue.
-
-        Returns:
-            None
         """
         self.inner_list.add_to_end(to_enqueue)
 
-    def dequeue(self):
+    def dequeue(self) -> str:
         """Removes an item from MyQueue.
 
         Removes the foremost item from MyQueue and returns it's value.

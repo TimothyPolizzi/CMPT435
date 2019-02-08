@@ -14,7 +14,7 @@ class ArrayStack(object):
         self.inner_list = []
         self.top = -1
 
-    def push(self, to_push):
+    def push(self, to_push: str):
         """Adds an item to ArrayStack.
 
         Appends an item to the top of ArrayStack.
@@ -25,7 +25,7 @@ class ArrayStack(object):
         self.inner_list[self.top] = to_push
         self.top = self.top + 1
 
-    def pop(self):
+    def pop(self) -> str:
         """Removes an item from ArrayStack
 
         Removes the item at top from ArrayStack
@@ -38,13 +38,13 @@ class ArrayStack(object):
         self.top = self.top - 1
         return to_return
 
-    def is_empty(self):
+    def is_empty(self) -> bool:
         """Returns True if the Stack is empty, False otherwise."""
         to_return = False
         if self.top is -1:
             to_return = True
         return to_return
 
-    def peek(self):
+    def peek(self) -> str:
         """Returns the topmost value of arrayStack."""
         return self.inner_list[self.top]

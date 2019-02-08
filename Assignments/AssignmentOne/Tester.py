@@ -5,10 +5,10 @@
 __author__ = "Tim Polizzi"
 __email__ = "Timothy.Polizzi1@marist.edu"
 
-from myLinkedList import MyLinkedList
-from myQueue import MyQueue
-from myStack import MyStack
-from PalindromeCheck import check_file_for_palindromes
+from Assignments.AssignmentOne.MyLinkedList import MyLinkedList
+from Assignments.AssignmentOne.MyQueue import MyQueue
+from Assignments.AssignmentOne.MyStack import MyStack
+from Assignments.AssignmentOne.PalindromeCheck import check_file_for_palindromes
 
 my_list = MyLinkedList()
 queue = MyQueue()
