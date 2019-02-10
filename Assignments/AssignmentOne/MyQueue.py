@@ -6,7 +6,7 @@ __email__ = "Timothy.Polizzi1@marist.edu"
 from Assignments.AssignmentOne.MyLinkedList import MyLinkedList
 
 
-class MyQueue(object):
+class MyQueue(MyLinkedList):
     """A queue generated without the assistance of external libraries for CMPT435.
 
     A queue generated separate from any pre-existing libraries, for the purpose of learning how to use
@@ -14,7 +14,9 @@ class MyQueue(object):
     """
     def __init__(self):
         """Initializes MyQueue"""
+        super().__init__()
         self.inner_list = MyLinkedList()
+        self.inner_list.tail = None
 
     def enqueue(self, to_enqueue: str):
         """Adds an item to MyQueue.
@@ -24,7 +26,13 @@ class MyQueue(object):
         Args:
             to_enqueue: The item that is to be appended to MyQueue.
         """
-        self.inner_list.add_to_end(to_enqueue)
+        new_node = self.inner_list.TextNode(to_enqueue, None)
+        if self.inner_list.is_empty():
+            self.inner_list.head = new_node
+            self.inner_list.tail = new_node
+        else:
+            self.inner_list.tail.next = new_node
+            self.inner_list.tail = new_node
 
     def dequeue(self) -> str:
         """Removes an item from MyQueue.
@@ -34,5 +42,9 @@ class MyQueue(object):
         Returns:
             The value of the item that was removed from MyQueue.
         """
-        removed_val = self.inner_list.remove_from_front()
-        return removed_val
+        if self.inner_list.is_empty():
+            raise Exception('List is empty')
+        else:
+            old_head_val = self.inner_list.head.val
+            self.inner_list.head = self.inner_list.head.next
+            return old_head_val

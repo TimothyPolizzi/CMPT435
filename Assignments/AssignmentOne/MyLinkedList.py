@@ -86,13 +86,13 @@ class MyLinkedList(object):
         if self.is_empty():
             raise Exception('List is empty')
 
-        return self._real_evil_traversal(to_find, self.head)
+        return self.__real_evil_traversal(to_find, self.head)
 
-    def _real_evil_traversal(self, to_find: str, current_node: TextNode) -> TextNode:
+    def __real_evil_traversal(self, to_find: str, current_node: TextNode) -> TextNode:
         if current_node.val is to_find or current_node.next is None:
             return current_node
 
-        return self._real_evil_traversal(to_find, current_node.next)
+        return self.__real_evil_traversal(to_find, current_node.next)
 
     def is_empty(self) -> bool:
         """Returns True if MyLinkedList contains no TextNodes, False otherwise"""

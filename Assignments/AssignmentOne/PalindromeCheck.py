@@ -81,4 +81,4 @@ def check_file_for_palindromes(file_to_read: str):
 
 
 # This method is to run the code, just put the path in the strings to the file you want to check.
-# check_file_for_palindromes("")
+check_file_for_palindromes("/Users/timpolizzi/Downloads/magicitems.txt")

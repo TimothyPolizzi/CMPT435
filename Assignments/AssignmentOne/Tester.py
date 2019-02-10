@@ -19,9 +19,9 @@ def main():
     # test_add_to_front()
     test_add_to_end()
     # test_traverse()
-    test_evil()
+    # test_evil()
     # test_remove()
-    # test_dequeue()
+    test_dequeue()
     # test_pop()
     # test_run('')
 
@@ -70,9 +70,9 @@ def test_dequeue():
 
 
 def test_pop():
-    print(stack.pop)
-    print(stack.pop)
-    print(stack.pop)
+    print(stack.pop())
+    print(stack.pop())
+    print(stack.pop())
     # print(stack.pop)
 
 
