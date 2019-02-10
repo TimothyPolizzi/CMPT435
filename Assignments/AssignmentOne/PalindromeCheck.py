@@ -11,6 +11,11 @@ from Assignments.AssignmentOne.FileReader import read_file
 import re
 
 
+def main():
+    # Change this filepath to wherever the file you want to check is.
+    check_file_for_palindromes("/Users/timpolizzi/Downloads/magicitems.txt")
+
+
 def string_cleaner(string_to_clean: str) -> str:
     """Cleans a string that is to be checked if it is a palindrome.
 
@@ -80,5 +85,5 @@ def check_file_for_palindromes(file_to_read: str):
             print(string)
 
 
-# This method is to run the code, just put the path in the strings to the file you want to check.
-check_file_for_palindromes("/Users/timpolizzi/Downloads/magicitems.txt")
+if __name__ == '__main__':
+    main()
