@@ -4,6 +4,7 @@ __author__ = "Tim Polizzi"
 __email__ = "Timothy.Polizzi1@marist.edu"
 
 from typing import List
+import os
 
 
 def read_file(path_to_file: str) -> List[str]:

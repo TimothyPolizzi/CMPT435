@@ -13,7 +13,7 @@ import re
 
 def main():
     # Change this filepath to wherever the file you want to check is.
-    check_file_for_palindromes("/Users/timpolizzi/Downloads/magicitems.txt")
+    check_file_for_palindromes("magicitems.txt")
 
 
 def string_cleaner(string_to_clean: str) -> str:
