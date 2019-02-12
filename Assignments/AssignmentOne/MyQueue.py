@@ -12,6 +12,7 @@ class MyQueue(MyLinkedList):
     A queue generated separate from any pre-existing libraries, for the purpose of learning how to use
     Queues for Allan Labouseur's algorithms class.
     """
+
     def __init__(self):
         """Initializes MyQueue"""
         super().__init__()

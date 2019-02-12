@@ -4,7 +4,6 @@ __author__ = "Tim Polizzi"
 __email__ = "Timothy.Polizzi1@marist.edu"
 
 from typing import List
-import os
 
 
 def read_file(path_to_file: str) -> List[str]:
@@ -16,7 +15,7 @@ def read_file(path_to_file: str) -> List[str]:
         path_to_file(String): The string path to the file that is to be read.
 
     Returns:
-        The array of strings that contain the lines of the file that was read.
+        List[str]: The array of strings that contain the lines of the file that was read.
     """
     file_to_read = open(path_to_file, "r")
     string_array = []

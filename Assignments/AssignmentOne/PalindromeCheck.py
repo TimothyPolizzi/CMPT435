@@ -9,6 +9,7 @@ from Assignments.AssignmentOne.MyStack import MyStack
 from Assignments.AssignmentOne.MyQueue import MyQueue
 from Assignments.AssignmentOne.FileReader import read_file
 import re
+import typing
 
 
 def main():
@@ -16,13 +17,14 @@ def main():
     check_file_for_palindromes("magicitems.txt")
 
 
-def string_cleaner(string_to_clean: str) -> str:
+def string_cleaner(string_to_clean: str, regex: typing.Pattern) -> str:
     """Cleans a string that is to be checked if it is a palindrome.
 
     Takes a string and removes any non-alphabet characters from it.
 
     Args:
         string_to_clean(String): The string that is to have any non-alphabetic characters removed from it.
+        regex(re): A compiled regex used to clean the string.
 
     Returns:
         string_to_clean after it has had all non-alphabetic characters removed from it.
@@ -31,7 +33,6 @@ def string_cleaner(string_to_clean: str) -> str:
 
     # I didn't want to use an external library but I REALLY did not want to write all those elifs
 
-    regex = re.compile('[^a-zA-Z]')
     final_cleaned_string = regex.sub('', updated_string_to_clean)  # Put it all back together
     return final_cleaned_string
 
@@ -58,7 +59,7 @@ def check_for_palindrome(string_to_check: str) -> bool:
 
     counter = 0
     stack_and_queue_are_equal = True
-# just check that there if the last letter has been hit or if the stack and queue don't match
+    # just check that there if the last letter has been hit or if the stack and queue don't match
     # (cuz they aren't palindromes if they don't match)
     while counter < character_list.__len__() and stack_and_queue_are_equal:
         counter += 1
@@ -78,9 +79,10 @@ def check_file_for_palindromes(file_to_read: str):
     Args:
         file_to_read(String): The path to the file to be checked for palindromes.
     """
+    regex = re.compile('[^a-zA-Z]')
     array_of_strings = read_file(file_to_read)
     for string in array_of_strings:
-        corrected_string = string_cleaner(string)
+        corrected_string = string_cleaner(string, regex)
         if check_for_palindrome(corrected_string):
             print(string)
 

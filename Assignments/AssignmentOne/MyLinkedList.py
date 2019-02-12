@@ -10,6 +10,7 @@ class MyLinkedList(object):
     A linked list generated separate from any pre-existing libraries, for the purpose of learning how to use
     linked lists for Allan Labouseur's algorithms class.
     """
+
     def __init__(self):
         """Initializes MyLinkedList"""
         self.head = None
@@ -63,8 +64,8 @@ class MyLinkedList(object):
                 while current_node.val is not text_to_visit:
                     current_node = current_node.next
             elif len(foo) == 0:  # Traversal to find the last node in the list
-                    while current_node.next is not None:
-                        current_node = current_node.next
+                while current_node.next is not None:
+                    current_node = current_node.next
         else:
             current_node = None
 

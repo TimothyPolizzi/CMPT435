@@ -9,6 +9,7 @@ class ArrayStack(object):
 
     A fun little project creating a stack using an array for better space usage.
     """
+
     def __init__(self):
         """Initializes ArrayStack"""
         self.inner_list = []

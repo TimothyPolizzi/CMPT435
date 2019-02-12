@@ -12,6 +12,7 @@ class MyStack(MyLinkedList):
     A stack generated separate from any pre-existing libraries, for the purpose of learning how to
     use stacks for Allan Labouseur's algorithms class.
     """
+
     def __init__(self):
         """Initializes MyStack"""
         super().__init__()
