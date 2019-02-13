@@ -22,6 +22,7 @@ def read_file(path_to_file: str) -> List[str]:
 
     error_check = file_to_read.readline()  # reads the first line of a file
     while error_check:  # loop while there is another line to read
+        error_check = error_check[0:-1].lower()  # This removes the annoying little \n tag
         string_array.append(error_check)  # add the string to the array
         error_check = file_to_read.readline()  # update the currently checked line
     return string_array

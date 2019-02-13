@@ -32,11 +32,10 @@ def string_cleaner(string_to_clean: str, regex: typing.Pattern) -> str:
     Returns:
         string_to_clean after it has had all non-alphabetic characters removed from it.
     """
-    updated_string_to_clean = string_to_clean[0:-1].lower()  # This removes the annoying little \n tag
 
     # I didn't want to use an external library but I REALLY did not want to write all those elifs
 
-    final_cleaned_string = regex.sub('', updated_string_to_clean)  # Put it all back together
+    final_cleaned_string = regex.sub('', string_to_clean)  # Put it all back together
     return final_cleaned_string
 
 
