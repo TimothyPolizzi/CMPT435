@@ -26,8 +26,8 @@ class MyStack(MyLinkedList):
         Args:
             to_push: The item that is to be appended to MyStack.
         """
-        self.inner_list.new_node = self.inner_list.TextNode(to_push, self.inner_list.head)
-        self.inner_list.head = self.inner_list.new_node
+        new_node = self.inner_list.TextNode(to_push, self.inner_list.head)
+        self.inner_list.head = new_node
 
     def pop(self) -> str:
         """Removes an item from MyStack.

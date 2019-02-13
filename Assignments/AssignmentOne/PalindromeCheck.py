@@ -5,8 +5,7 @@
 __author__ = "Tim Polizzi"
 __email__ = "Timothy.Polizzi1@marist.edu"
 
-# If things aren't working remove any Assignments. from the imports (this file and MyStack and MyQueue)
-# and un-comment the next two lines
+# Remove any faulty import links and de-comment the next two lines to make things work
 # import sys
 # sys.path.append("..")
 from Assignments.AssignmentOne.MyStack import MyStack
@@ -52,12 +51,11 @@ def check_for_palindrome(string_to_check: str) -> bool:
     Returns:
         A bool that is True if string_to_check is a palindrome, False otherwise.
     """
-    character_list = list(string_to_check)
 
     stack = MyStack()
     queue = MyQueue()
 
-    for character in character_list:
+    for character in string_to_check:
         stack.push(character)
         queue.enqueue(character)
 
@@ -65,7 +63,7 @@ def check_for_palindrome(string_to_check: str) -> bool:
     stack_and_queue_are_equal = True
     # just check that there if the last letter has been hit or if the stack and queue don't match
     # (cuz they aren't palindromes if they don't match)
-    while counter < character_list.__len__() and stack_and_queue_are_equal:
+    while counter < string_to_check.__len__() and stack_and_queue_are_equal:
         counter += 1
         stack_char = stack.pop()
         queue_char = queue.dequeue()
