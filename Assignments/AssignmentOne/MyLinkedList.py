@@ -1,14 +1,14 @@
 # A linked list written for the intention of making it into a stack or queue.
 
-__author__ = "Tim Polizzi"
-__email__ = "Timothy.Polizzi1@marist.edu"
+__author__ = 'Tim Polizzi'
+__email__ = 'Timothy.Polizzi1@marist.edu'
 
 
 class MyLinkedList(object):
     """A linked list generated without the assistance of external libraries for CMPT435.
 
     A linked list generated separate from any pre-existing libraries, for the purpose of learning how to use
-    linked lists for Allan Labouseur's algorithms class.
+    linked lists for Alan Labouseur's algorithms class.
     """
 
     def __init__(self):
@@ -33,8 +33,8 @@ class MyLinkedList(object):
                 *foo[1](TextNode): The pointer to the next TextNode in MyLinkedList.
             """
             if len(foo) == 0:  # Constructor for an empty call of TextNode
-                self.val = ""
-                self.next = ""
+                self.val = ''
+                self.next = ''
             elif len(foo) == 2:  # Constructor for TextNode with predefined text and next node
                 internal_text = foo[0]
                 next_node = foo[1]

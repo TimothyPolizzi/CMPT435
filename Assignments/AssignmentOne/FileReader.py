@@ -1,7 +1,7 @@
 # A way to read a file of strings into an array.
 
-__author__ = "Tim Polizzi"
-__email__ = "Timothy.Polizzi1@marist.edu"
+__author__ = 'Tim Polizzi'
+__email__ = 'Timothy.Polizzi1@marist.edu'
 
 from typing import List
 
@@ -17,7 +17,7 @@ def read_file(path_to_file: str) -> List[str]:
     Returns:
         List[str]: The array of strings that contain the lines of the file that was read.
     """
-    file_to_read = open(path_to_file, "r")
+    file_to_read = open(path_to_file, 'r')
     string_array = []
 
     error_check = file_to_read.readline()  # reads the first line of a file

@@ -2,8 +2,8 @@
 
 # Project1 for CMPT435.
 
-__author__ = "Tim Polizzi"
-__email__ = "Timothy.Polizzi1@marist.edu"
+__author__ = 'Tim Polizzi'
+__email__ = 'Timothy.Polizzi1@marist.edu'
 
 # Remove any faulty import links and de-comment the next two lines to make things work
 # import sys
@@ -17,7 +17,7 @@ import typing
 
 def main():
     # Change this filepath to wherever the file you want to check is.
-    check_file_for_palindromes("magicitems.txt")
+    check_file_for_palindromes('magicitems.txt')
 
 
 def string_cleaner(string_to_clean: str, regex: typing.Pattern) -> str:

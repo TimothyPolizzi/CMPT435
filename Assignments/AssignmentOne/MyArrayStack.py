@@ -1,7 +1,7 @@
 # A stack for project1 of CMPT435. Also for fun.
 
-__author__ = "Tim Polizzi"
-__email__ = "Timothy.Polizzi1@marist.edu"
+__author__ = 'Tim Polizzi'
+__email__ = 'Timothy.Polizzi1@marist.edu'
 
 
 class ArrayStack(object):
