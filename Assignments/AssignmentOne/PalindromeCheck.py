@@ -5,6 +5,10 @@
 __author__ = "Tim Polizzi"
 __email__ = "Timothy.Polizzi1@marist.edu"
 
+# If things aren't working remove any Assignments. from the imports (this file and MyStack and MyQueue)
+# and un-comment the next two lines
+# import sys
+# sys.path.append("..")
 from Assignments.AssignmentOne.MyStack import MyStack
 from Assignments.AssignmentOne.MyQueue import MyQueue
 from Assignments.AssignmentOne.FileReader import read_file
