@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57c776bd-bc12-453a-8147-4f10e126c8cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assignments/AssignmentTwo/SelectionSort.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignments/AssignmentTwo/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignments/AssignmentTwo/tester.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignments/AssignmentTwo/InsertionSort.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignments/AssignmentTwo/Swap.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignments/AssignmentTwo/SelectionSort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentTwo/SelectionSort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignments/AssignmentTwo/tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentTwo/tester.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +16,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/CMPT435$myStack.coverage" NAME="myStack Coverage Results" MODIFIED="1549139167757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentOne" />
-    <SUITE FILE_PATH="coverage/CMPT435$tester__1_.coverage" NAME="tester (1) Coverage Results" MODIFIED="1550364171034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentTwo" />
+    <SUITE FILE_PATH="coverage/CMPT435$tester__1_.coverage" NAME="tester (1) Coverage Results" MODIFIED="1550365303652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentTwo" />
     <SUITE FILE_PATH="coverage/CMPT435$tester.coverage" NAME="tester Coverage Results" MODIFIED="1549782546488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentOne" />
     <SUITE FILE_PATH="coverage/CMPT435$myLinkedList.coverage" NAME="myLinkedList Coverage Results" MODIFIED="1549138371898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentOne" />
     <SUITE FILE_PATH="coverage/CMPT435$FileReader.coverage" NAME="FileReader Coverage Results" MODIFIED="1549313680592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentOne" />
@@ -27,20 +28,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assignments/AssignmentTwo/tester.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+            <state relative-caret-position="315">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
               <folding>
                 <element signature="e#118#176#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assignments/AssignmentTwo/SelectionSort.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -53,6 +45,11 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <dirStrings>
+      <dir>$PROJECT_DIR$/Assignments/AssignmentTwo</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -73,7 +70,9 @@
         <option value="$PROJECT_DIR$/Assignments/AssignmentOne/MyQueue.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentOne/MyArrayStack.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentOne/FileReader.py" />
+        <option value="$PROJECT_DIR$/Assignments/AssignmentTwo/Swap.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentTwo/SelectionSort.py" />
+        <option value="$PROJECT_DIR$/Assignments/AssignmentTwo/InsertionSort.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentTwo/tester.py" />
       </list>
     </option>
@@ -297,12 +296,12 @@
       <workItem from="1550043368827" duration="619000" />
       <workItem from="1550044332493" duration="899000" />
       <workItem from="1550246319950" duration="403000" />
-      <workItem from="1550352117392" duration="3493000" />
+      <workItem from="1550352117392" duration="4475000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51543000" />
+    <option name="totallyTimeSpent" value="52525000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -417,17 +416,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentTwo/Swap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/AssignmentTwo/SelectionSort.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
+          <folding>
+            <element signature="e#120#143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentTwo/InsertionSort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding>
+            <element signature="e#115#138#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/AssignmentTwo/tester.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        <state relative-caret-position="315">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
           <folding>
             <element signature="e#118#176#0" expanded="true" />
           </folding>
