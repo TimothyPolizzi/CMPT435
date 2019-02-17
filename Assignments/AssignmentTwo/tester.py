@@ -7,6 +7,7 @@ __email__ = 'Timothy.Polizzi1@marist.edu'
 
 from Assignments.AssignmentOne.FileReader import read_file
 from Assignments.AssignmentTwo.SelectionSort import selection_sort
+from Assignments.AssignmentTwo.InsertionSort import insertion_sort
 from typing import List
 
 
@@ -17,13 +18,22 @@ def main():
     to_sort_4 = []
     to_sort_5 = ["e", "z", "b", "m", "e", "r", "k", "q"]
 
-    test_selection(to_sort_1)
+    # test_selection(to_sort_1)
+    test_insertion(to_sort_1)
 
 
 def test_selection(to_sort: List[str]):
     sorted_list = selection_sort(to_sort)
+    print_list(sorted_list)
 
-    for item in sorted_list:
+
+def test_insertion(to_sort: List[str]):
+    sorted_list = insertion_sort(to_sort)
+    print_list(sorted_list)
+
+
+def print_list(to_print: List[str]):
+    for item in to_print:
         print(item)
 
 
