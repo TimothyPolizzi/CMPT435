@@ -129,3 +129,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# I don't think I need it?
+workspace.xml
