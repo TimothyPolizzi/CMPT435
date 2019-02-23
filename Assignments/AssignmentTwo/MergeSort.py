@@ -22,11 +22,11 @@ def merge_sort(to_sort: List[str]) -> List[str]:
     """
 
     to_sort_copy = to_sort.copy()
-    __merge_sort_helper(to_sort_copy, 0, to_sort_copy.__len__())
+    __merge_sort_helper(to_sort_copy)
     return to_sort_copy
 
 
-def __merge_sort_helper(to_split: List[str], first_index: int, last_index: int):
+def __merge_sort_helper(to_split: List[str]) -> List[str]:
     """Internal helper method, doc for me only
 
     First, find the middle of the list. Next up, recursively go through the right side of this list to find a
@@ -35,44 +35,44 @@ def __merge_sort_helper(to_split: List[str], first_index: int, last_index: int):
 
     Args:
         to_split: The list that is to be split and sorted.
-        first_index: The index of the first item in the list.
-        last_index: The index of the last item in the list.
+
+    Returns:
+        The sorted list to_split.
     """
-    if first_index >= last_index:
-        return to_split[first_index: last_index]
+    if len(to_split) <= 1:
+        return to_split
 
-    middle = int((last_index - first_index) / 2)
+    middle = int(len(to_split) / 2)
 
-    __merge_sort_helper(to_split, first_index, middle)
-    __merge_sort_helper(to_split, middle, last_index)
+    left = merge_sort(to_split[:middle])
+    right = merge_sort(to_split[middle:])
 
-    return __merge(to_split, first_index, middle, last_index)
+    return __merge(left, right)
 
 
-def __merge(to_merge: List[str], first_index: int, mid_index: int, last_index: int):
+def __merge(left, right):
     """Internal helper method, doc for me only
 
     Takes the list and goes through it, attempting to merge the items into order. Keeps placeholders for where
     the lists were merged and adds from one or the other depending on comparisons to the new list
 
     Args:
-        to_merge:
-        first_index:
-        mid_index:
-        last_index:
+        left:
+        right:
     """
 
-    return_list = to_merge.copy()
-    i = first_index
-    internal_front = first_index
-    internal_end = mid_index
+    left_index = 0
+    right_index = 0
+    result = []
 
-    while i < last_index:
-        if internal_end > internal_front and to_merge[internal_front] > to_merge[internal_end]:
-            return_list[i] = to_merge[internal_end]
-            internal_end = internal_end + 1
+    while left_index < len(left) and right_index < len(right):
+        if left[left_index] < right[right_index]:
+            result.append(left[left_index])
+            left_index = left_index + 1
         else:
-            return_list[i] = to_merge[internal_front]
-            internal_front = internal_front + 1
-        i = i + 1
-    return return_list
+            result.append(right[right_index])
+            right_index = right_index + 1
+
+    result = result + left[left_index:]
+    result = result + right[right_index:]
+    return result
