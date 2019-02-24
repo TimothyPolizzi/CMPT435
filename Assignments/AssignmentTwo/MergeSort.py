@@ -4,7 +4,6 @@ __author__ = 'Tim Polizzi'
 __email__ = 'Timothy.Polizzi1@marist.edu'
 
 from typing import List
-from Assignments.AssignmentTwo.Swap import swap
 
 
 def merge_sort(to_sort: List[str]) -> List[str]:
@@ -22,7 +21,7 @@ def merge_sort(to_sort: List[str]) -> List[str]:
     """
 
     to_sort_copy = to_sort.copy()
-    __merge_sort_helper(to_sort_copy)
+    to_sort_copy = __merge_sort_helper(to_sort_copy)
     return to_sort_copy
 
 
@@ -34,7 +33,7 @@ def __merge_sort_helper(to_split: List[str]) -> List[str]:
     and get the sorted (part of the) list.
 
     Args:
-        to_split: The list that is to be split and sorted.
+        to_split(List[str]): The list that is to be split and sorted.
 
     Returns:
         The sorted list to_split.
@@ -44,28 +43,33 @@ def __merge_sort_helper(to_split: List[str]) -> List[str]:
 
     middle = int(len(to_split) / 2)
 
-    left = merge_sort(to_split[:middle])
-    right = merge_sort(to_split[middle:])
+    left = __merge_sort_helper(to_split[:middle])
+    right = __merge_sort_helper(to_split[middle:])
 
     return __merge(left, right)
 
 
-def __merge(left, right):
+def __merge(left: List[str], right: List[str]):
     """Internal helper method, doc for me only
 
     Takes the list and goes through it, attempting to merge the items into order. Keeps placeholders for where
-    the lists were merged and adds from one or the other depending on comparisons to the new list
+    the lists were merged and adds from one or the other depending on comparisons to the new list.
 
     Args:
-        left:
-        right:
+        left(List[str]): The sorted left half of the list.
+        right(List[str]): The sorted right half of the list.
+
+    Returns:
+        A sorted list of both left and right.
     """
 
     left_index = 0
     right_index = 0
     result = []
 
+    # While there are things in either list loop.
     while left_index < len(left) and right_index < len(right):
+        # If the current item in the left list is less than that of the right list.
         if left[left_index] < right[right_index]:
             result.append(left[left_index])
             left_index = left_index + 1
@@ -73,6 +77,7 @@ def __merge(left, right):
             result.append(right[right_index])
             right_index = right_index + 1
 
+    # Once the left or right side has run out of items, dump the rest into the return list.
     result = result + left[left_index:]
     result = result + right[right_index:]
     return result
