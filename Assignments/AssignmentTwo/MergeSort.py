@@ -38,6 +38,7 @@ def __merge_sort_helper(to_split: List[str]) -> List[str]:
     Returns:
         The sorted list to_split.
     """
+
     if len(to_split) <= 1:
         return to_split
 

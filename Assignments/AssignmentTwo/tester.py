@@ -9,6 +9,7 @@ from Assignments.AssignmentOne.FileReader import read_file
 from Assignments.AssignmentTwo.SelectionSort import selection_sort
 from Assignments.AssignmentTwo.InsertionSort import insertion_sort
 from Assignments.AssignmentTwo.MergeSort import merge_sort
+from Assignments.AssignmentTwo.QuickSort import quick_sort
 from typing import List
 
 
@@ -36,6 +37,10 @@ def test_insertion(to_sort: List[str]):
 
 def test_merge(to_sort: List[str]):
     sorted_list = merge_sort(to_sort)
+    print_list(sorted_list)
+
+def test_quick(to_sort: List[str]):
+    sorted_list = quick_sort(to_sort)
     print_list(sorted_list)
 
 
