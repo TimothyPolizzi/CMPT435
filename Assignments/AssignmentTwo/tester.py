@@ -23,6 +23,7 @@ def main():
     # test_selection(to_sort_1)
     # test_insertion(to_sort_1)
     # test_merge(to_sort_1)
+    # test_quick(to_sort_1)
 
 
 def test_selection(to_sort: List[str]):
@@ -38,6 +39,7 @@ def test_insertion(to_sort: List[str]):
 def test_merge(to_sort: List[str]):
     sorted_list = merge_sort(to_sort)
     print_list(sorted_list)
+
 
 def test_quick(to_sort: List[str]):
     sorted_list = quick_sort(to_sort)
