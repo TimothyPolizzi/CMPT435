@@ -27,7 +27,7 @@ def main():
     # test_merge(to_sort_1)
     # test_quick(to_sort_1)
     # test_linear(to_sort_1)
-    # test_binary(to_sort_1)
+    test_binary(to_sort_1)
 
 
 def test_selection(to_sort: List[str]):

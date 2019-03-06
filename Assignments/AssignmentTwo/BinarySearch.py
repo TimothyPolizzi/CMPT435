@@ -19,18 +19,29 @@ def binary_search(to_search: List[str], to_find: str) -> int:
     Returns:
         The index in to_search that to_find is located at; -1 if to_find does not exist in to_search.
     """
-    return __binary_search(to_search, to_find, 0, len(to_search))
+
+    if len(to_search) < 1:
+        to_return = -1
+    else:
+        to_return = __binary_search(to_search, to_find, 0, len(to_search))
+
+    return to_return
 
 
 def __binary_search(to_search: List[str], to_find: str, start, stop) -> int:
     midpoint = int((start + stop) / 2)
 
-    if start > stop or stop == 0:
-        return -1
+    if start <= stop:
 
-    if to_search[midpoint] > to_find:
-        return __binary_search(to_search, to_find, start, midpoint-1)
-    elif to_search[midpoint] < to_find:
-        return __binary_search(to_search, to_find, midpoint+1, stop)
-    else:  # target is midpoint
-        return midpoint
+        if to_search[midpoint] > to_find:
+            to_return = __binary_search(to_search, to_find, start, midpoint-1)
+
+        elif to_search[midpoint] < to_find:
+            to_return = __binary_search(to_search, to_find, midpoint+1, stop)
+
+        else:  # target is midpoint
+            to_return = midpoint
+    else:
+        to_return = -1
+
+    return to_return
