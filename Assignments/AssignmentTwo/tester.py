@@ -10,6 +10,7 @@ from Assignments.AssignmentTwo.SelectionSort import selection_sort
 from Assignments.AssignmentTwo.InsertionSort import insertion_sort
 from Assignments.AssignmentTwo.MergeSort import merge_sort
 from Assignments.AssignmentTwo.QuickSort import quick_sort
+from Assignments.AssignmentTwo.LinearSearch import linear_search
 from typing import List
 
 
@@ -24,6 +25,7 @@ def main():
     # test_insertion(to_sort_1)
     # test_merge(to_sort_1)
     # test_quick(to_sort_1)
+    test_linear(to_sort_1)
 
 
 def test_selection(to_sort: List[str]):
@@ -44,6 +46,12 @@ def test_merge(to_sort: List[str]):
 def test_quick(to_sort: List[str]):
     sorted_list = quick_sort(to_sort)
     print_list(sorted_list)
+
+
+def test_linear(to_search: List[str]):
+    print(linear_search(to_search, "axe"))
+    print(linear_search(to_search, "a"))
+    print(linear_search(to_search, "e"))
 
 
 def print_list(to_print: List[str]):
