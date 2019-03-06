@@ -1,4 +1,4 @@
-# A merge sort for project2 of CMPT435.
+# A quick sort for project2 of CMPT435.
 
 __author__ = 'Tim Polizzi'
 __email__ = 'Timothy.Polizzi1@marist.edu'
