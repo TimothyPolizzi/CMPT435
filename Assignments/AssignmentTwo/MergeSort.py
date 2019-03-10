@@ -5,6 +5,8 @@ __email__ = 'Timothy.Polizzi1@marist.edu'
 
 from typing import List
 
+comparisons = 0
+
 
 def merge_sort(to_sort: List[str]) -> List[str]:
     """Sorts a list to_sort using a merge sort.
@@ -22,6 +24,8 @@ def merge_sort(to_sort: List[str]) -> List[str]:
 
     to_sort_copy = to_sort.copy()
     to_sort_copy = __merge_sort_helper(to_sort_copy)
+
+    print("Comparisons: " + str(comparisons))
     return to_sort_copy
 
 
@@ -77,6 +81,9 @@ def __merge(left: List[str], right: List[str]):
         else:
             result.append(right[right_index])
             right_index = right_index + 1
+
+        global comparisons
+        comparisons = comparisons + 1
 
     # Once the left or right side has run out of items, dump the rest into the return list.
     result = result + left[left_index:]

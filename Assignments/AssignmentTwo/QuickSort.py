@@ -5,6 +5,8 @@ __email__ = 'Timothy.Polizzi1@marist.edu'
 
 from typing import List
 
+comparisons = 0
+
 
 def quick_sort(to_sort: List[str]):
     """Quickly sorts a given list to_sort.
@@ -23,6 +25,8 @@ def quick_sort(to_sort: List[str]):
 
     __quick_sort_helper(temp_list, 0, len(temp_list) - 1)
 
+    print("Comparisons: " + str(comparisons))
+
     return temp_list
 
 
@@ -32,16 +36,21 @@ def __quick_sort_helper(to_sort: List[str], low, high):
         left = low
         right = high
 
+        global comparisons
+
         while left <= right:  # Time to do some stuff
             while to_sort[left] < pivot:  # increment left until it has the number of spaces the pivot is from the left
                 left = left + 1
+                comparisons = comparisons + 1
             while to_sort[right] > pivot:  # same as the previous loop, but this time from the right
                 right = right - 1
-
+                comparisons = comparisons + 1
             if left <= right:  # if nothing has killed itself yet, swap the left and right items
                 temp = to_sort[left]
                 to_sort[left] = to_sort[right]
                 to_sort[right] = temp
+
+                comparisons = comparisons + 1
 
                 left = left + 1
                 right = right - 1

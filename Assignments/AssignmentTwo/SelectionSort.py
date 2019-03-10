@@ -21,6 +21,7 @@ def selection_sort(to_sort: List[str]) -> List[str]:
         A new list containing the sorted array.
     """
     to_sort_copy = to_sort.copy()
+    comparisons = 0
 
     i = 0
     while i < (to_sort_copy.__len__() - 1):
@@ -38,10 +39,12 @@ def selection_sort(to_sort: List[str]) -> List[str]:
             if to_sort_copy[current_smallest] > to_sort_copy[j]:
 
                 current_smallest = j
+                comparisons = comparisons + 1
 
             j = j + 1
 
         swap(current_smallest, i, to_sort_copy)
         i = i + 1
 
+    print("Comparisons: " + str(comparisons))
     return to_sort_copy

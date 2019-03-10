@@ -21,13 +21,16 @@ def insertion_sort(to_sort: List[str]) -> List[str]:
     """
 
     to_sort_copy = to_sort.copy()
+    comparisons = 0
 
     i = 0
     while i < to_sort_copy.__len__():
         j = i
         while j > 0 and to_sort_copy[j-1] > to_sort_copy[j]:
             swap(j-1, j, to_sort_copy)
+            comparisons = comparisons + 1
             j = j - 1
         i = i + 1
 
+    print("Comparisons: " + str(comparisons))
     return to_sort_copy
