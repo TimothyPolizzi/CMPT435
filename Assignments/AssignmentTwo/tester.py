@@ -12,6 +12,7 @@ from Assignments.AssignmentTwo.MergeSort import merge_sort
 from Assignments.AssignmentTwo.QuickSort import quick_sort
 from Assignments.AssignmentTwo.LinearSearch import linear_search
 from Assignments.AssignmentTwo.BinarySearch import binary_search
+from Assignments.AssignmentTwo.HashTable import HashTable
 from typing import List
 
 
@@ -28,6 +29,7 @@ def main():
     # test_quick(to_sort_1)
     # # test_linear(to_sort_1)
     # test_binary(to_sort_1)
+    test_hash(to_sort_1)
 
 
 def test_selection(to_sort: List[str]):
@@ -62,6 +64,15 @@ def test_binary(to_search: List[str]):
     print(binary_search(sorted_list, "axe"))
     print(binary_search(sorted_list, "a"))
     print(binary_search(sorted_list, "e"))
+
+
+def test_hash(to_add: List[str]):
+    test_table = HashTable()
+    print(test_table.calculate_hash("a"))
+    print(test_table.calculate_hash("b"))
+    print(test_table.calculate_hash(""))
+    print(test_table.calculate_hash("22222"))
+    print(test_table.calculate_hash("what?"))
 
 
 def print_list(to_print: List[str]):
