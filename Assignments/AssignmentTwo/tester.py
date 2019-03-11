@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Project1 for CMPT435.
+# Project2 test code for CMPT435.
 
 __author__ = 'Tim Polizzi'
 __email__ = 'Timothy.Polizzi1@marist.edu'
@@ -17,19 +17,19 @@ from typing import List
 
 
 def main():
-    to_sort_1 = read_file("../AssignmentOne/magicitems.txt")
-    to_sort_2 = ["a", "b", "c", "d", "e", "f", "g", "h"]
-    to_sort_3 = ["h", "g", "f", "e", "d", "c", "b", "a"]
-    to_sort_4 = []
-    to_sort_5 = ["e", "z", "b", "m", "e", "r", "k", "q"]
+    list_1 = read_file("../AssignmentOne/magicitems.txt")
+    list_2 = ["a", "b", "c", "d", "e", "f", "g", "h"]
+    list_3 = ["h", "g", "f", "e", "d", "c", "b", "a"]
+    list_4 = []
+    list_5 = ["e", "z", "b", "m", "e", "r", "k", "q"]
 
-    # test_selection(to_sort_1)
-    # test_insertion(to_sort_1)
-    # test_merge(to_sort_1)
-    # test_quick(to_sort_1)
-    # # test_linear(to_sort_1)
-    # test_binary(to_sort_1)
-    test_hash(to_sort_1)
+    # test_selection(list_1)
+    # test_insertion(list_1)
+    # test_merge(list_1)
+    # test_quick(list_1)
+    # # test_linear(list_1)
+    # test_binary(list_1)
+    # test_hash(list_1)
 
 
 def test_selection(to_sort: List[str]):
