@@ -68,11 +68,14 @@ def test_binary(to_search: List[str]):
 
 def test_hash(to_add: List[str]):
     test_table = HashTable()
-    print(test_table.calculate_hash("a"))
-    print(test_table.calculate_hash("b"))
-    print(test_table.calculate_hash(""))
-    print(test_table.calculate_hash("22222"))
-    print(test_table.calculate_hash("what?"))
+
+    for item in to_add:
+        test_table.insert(item)
+
+    i = 0
+    while i < 250:
+        print(test_table.get_list(i))
+        i = i + 1
 
 
 def print_list(to_print: List[str]):

@@ -21,12 +21,12 @@ class HashTable(object):
         An item to store things in the hash table.
         """
         def __init__(self, value: str):
-            self.value = value
+            self.val = value
             self.next = None
 
     def __init__(self):
         self.table_size = 250
-        self.internal_table = []
+        self.internal_table = [None] * self.table_size
         self.size = 0
 
     def insert(self, to_add: str):
@@ -44,7 +44,7 @@ class HashTable(object):
             self.internal_table[hash_val] = self.__HashTableItem(to_add)
         else:
             current_chain = self.internal_table[hash_val]
-            while current_chain.next is not None and current_chain.value is not to_add:
+            while current_chain.next is not None and current_chain.val is not to_add:
                 current_chain = current_chain.next
             current_chain.next = self.__HashTableItem(to_add)
 
@@ -76,7 +76,7 @@ class HashTable(object):
             hash_list.next = hash_list.next.next
 
         return to_return
-            
+
     def get_list(self, to_find: int) -> List[str]:
         """Gets the internal list of items at a given hash value.
 
@@ -89,11 +89,14 @@ class HashTable(object):
             The list of items stored at that hash value.
         """
         current = self.internal_table[to_find]
-        return_list = [current]
+        return_list = None
+        
+        if current is not None:
+            return_list = [current.val]
 
-        while current.next is not None:
-            current = current.next
-            return_list.append(current)
+            while current.next is not None:
+                current = current.next
+                return_list.append(current.val)
 
         return return_list
 
