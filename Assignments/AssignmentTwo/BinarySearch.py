@@ -5,6 +5,7 @@ __email__ = 'Timothy.Polizzi1@marist.edu'
 
 from typing import List
 
+comparisons = 0
 
 def binary_search(to_search: List[str], to_find: str) -> int:
     """Searches through a sorted list to_search to find the string to_find.
@@ -25,18 +26,22 @@ def binary_search(to_search: List[str], to_find: str) -> int:
     else:
         to_return = __binary_search(to_search, to_find, 0, len(to_search))
 
+    print("Comparisons: " + str(comparisons))
     return to_return
 
 
 def __binary_search(to_search: List[str], to_find: str, start, stop) -> int:
     midpoint = int((start + stop) / 2)
+    global comparisons
 
     if start <= stop:
 
         if to_search[midpoint] > to_find:
+            comparisons = comparisons = 1
             to_return = __binary_search(to_search, to_find, start, midpoint-1)
 
         elif to_search[midpoint] < to_find:
+            comparisons = comparisons + 1
             to_return = __binary_search(to_search, to_find, midpoint+1, stop)
 
         else:  # target is midpoint

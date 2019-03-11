@@ -19,11 +19,14 @@ def linear_search(list_to_search: List[str], to_find: str) -> int:
         The integer value of the index of to_find in list_to_search. Will return -1 if to_find is not in list_to_search.
     """
     i = 0
+    comparisons = 0
 
     while i < len(list_to_search) and list_to_search[i] != to_find:
         i = i + 1
+        comparisons = comparisons + 1
 
     if i > len(list_to_search) - 1:
         i = -1
 
+    print("Comparisons: " + str(comparisons))
     return i

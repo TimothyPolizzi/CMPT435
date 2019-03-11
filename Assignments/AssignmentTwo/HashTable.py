@@ -90,7 +90,7 @@ class HashTable(object):
         """
         current = self.internal_table[to_find]
         return_list = None
-        
+
         if current is not None:
             return_list = [current.val]
 
