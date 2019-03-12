@@ -23,12 +23,12 @@ class HashTable(object):
         def __init__(self, value: str):
             self.val = value
             self.next = None
-            self.comparisons = 0
 
     def __init__(self):
         self.table_size = 250
         self.internal_table = [None] * self.table_size
         self.size = 0
+        self.comparisons = 0
 
     def insert(self, to_add: str):
         """Adds an item to the hash table.
@@ -62,6 +62,8 @@ class HashTable(object):
         Returns:
             The string that is removed from the hash table.
         """
+        self.comparisons = self.comparisons + 1
+
         hash_val = self.calculate_hash(to_remove)
         to_return = None
 
@@ -69,10 +71,12 @@ class HashTable(object):
             previous = None
             current = self.internal_table[hash_val]
             while current.next is not None and current.val is not to_remove:
+                self.comparisons = self.comparisons + 1
                 previous = current
                 current = current.next
 
             if current.val is to_remove:
+                self.comparisons = self.comparisons + 1
                 if previous is None:
                     to_return = current
                     self.internal_table[hash_val] = current.next
@@ -80,6 +84,7 @@ class HashTable(object):
                     to_return = current
                     previous.next = current.next
 
+        print(self.comparisons)
         return to_return
 
     def get_list(self, to_find: int) -> List[str]:

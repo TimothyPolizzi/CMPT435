@@ -93,6 +93,8 @@ def get_all_from_table(table: HashTable, list_to_get: List[str]) -> List[str]:
     return_list = []
 
     for item in list_to_get:
+        inner_list = table.get_list(table.calculate_hash(item))
+        print(item + ": [" + '; '.join(inner_list) + "]")
         return_list.append(table.remove(item))
 
     return return_list
