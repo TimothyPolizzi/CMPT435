@@ -23,6 +23,7 @@ class HashTable(object):
         def __init__(self, value: str):
             self.val = value
             self.next = None
+            self.comparisons = 0
 
     def __init__(self):
         self.table_size = 250
@@ -62,18 +63,22 @@ class HashTable(object):
             The string that is removed from the hash table.
         """
         hash_val = self.calculate_hash(to_remove)
-        hash_list = self.internal_table[hash_val]
         to_return = None
 
-        while hash_list.next is not None and hash_list.val is not to_remove:
-            if hash_list.next.val is to_remove:
-                to_return = hash_list.next
-                hash_list.next = hash_list.next.next
-            hash_list = hash_list.next
+        if self.internal_table[hash_val] is not None:
+            previous = None
+            current = self.internal_table[hash_val]
+            while current.next is not None and current.val is not to_remove:
+                previous = current
+                current = current.next
 
-        if hash_list.val is to_remove:
-            to_return = hash_list.next.val
-            hash_list.next = hash_list.next.next
+            if current.val is to_remove:
+                if previous is None:
+                    to_return = current
+                    self.internal_table[hash_val] = current.next
+                else:
+                    to_return = current
+                    previous.next = current.next
 
         return to_return
 

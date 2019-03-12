@@ -16,9 +16,14 @@ def main():
     list_1 = read_file("../AssignmentOne/magicitems.txt")
     sorted_list = quick_sort(list_1)
 
+    hash_tbl = HashTable()
+
     list_42 = get_42(list_1)
-    binary(sorted_list, list_42)
+    # binary(sorted_list, list_42)
     # linear(sorted_list, list_42)
+
+    add_all_to_table(hash_tbl, list_1)
+    get_all_from_table(hash_tbl, list_42)
 
 
 def get_42(str_list: List[str]) -> List[str]:
@@ -62,6 +67,35 @@ def linear(search_in: List[str], run_on: List[str]):
     """
     for string in run_on:
         print(linear_search(search_in, string))
+
+
+def add_all_to_table(table: HashTable, list_to_add: List[str]):
+    """Inserts all of list_to_add's items to table.
+
+    Args:
+        table(HashTable): The hash table that the items are to be inserted into.
+        list_to_add(List[str]): The list of strings to be added to table.
+    """
+    for item in list_to_add:
+        table.insert(item)
+
+
+def get_all_from_table(table: HashTable, list_to_get: List[str]) -> List[str]:
+    """Removes all of list_to_get from table and returns a list containing all the removed values.
+
+    Args:
+        table(HashTable): The hash table that is to have items removed from it.
+        list_to_get(List[str]): The list of strings that is to be retrieved.
+
+    Returns:
+        A list containing all values removed from the table.
+    """
+    return_list = []
+
+    for item in list_to_get:
+        return_list.append(table.remove(item))
+
+    return return_list
 
 
 if __name__ == '__main__':

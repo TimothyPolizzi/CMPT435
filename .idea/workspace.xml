@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57c776bd-bc12-453a-8147-4f10e126c8cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assignments/AssignmentTwo/RandomSearchAndHash.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignments/AssignmentTwo/BinarySearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentTwo/BinarySearch.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignments/AssignmentTwo/HashTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentTwo/HashTable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignments/AssignmentTwo/LinearSearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentTwo/LinearSearch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignments/AssignmentTwo/tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentTwo/tester.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignments/AssignmentTwo/RandomSearchAndHash.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentTwo/RandomSearchAndHash.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +18,7 @@
     <SUITE FILE_PATH="coverage/CMPT435$myLinkedList.coverage" NAME="myLinkedList Coverage Results" MODIFIED="1549138371898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentOne" />
     <SUITE FILE_PATH="coverage/CMPT435$FileReader.coverage" NAME="FileReader Coverage Results" MODIFIED="1549313680592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentOne" />
     <SUITE FILE_PATH="coverage/CMPT435$PalindromeCheck.coverage" NAME="PalindromeCheck Coverage Results" MODIFIED="1550043579240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentOne" />
-    <SUITE FILE_PATH="coverage/CMPT435$RandomSearchAndHash.coverage" NAME="RandomSearchAndHash Coverage Results" MODIFIED="1552330747933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentTwo" />
+    <SUITE FILE_PATH="coverage/CMPT435$RandomSearchAndHash.coverage" NAME="RandomSearchAndHash Coverage Results" MODIFIED="1552366347771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentTwo" />
     <SUITE FILE_PATH="coverage/CMPT435$myQueue.coverage" NAME="myQueue Coverage Results" MODIFIED="1549141063764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentOne" />
   </component>
   <component name="FileEditorManager">
@@ -37,10 +33,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assignments/AssignmentTwo/HashTable.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="79" column="39" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignments/AssignmentTwo/RandomSearchAndHash.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="59" column="63" selection-start-line="59" selection-start-column="63" selection-end-line="59" selection-end-column="63" />
+            <state relative-caret-position="338">
+              <caret line="101" selection-start-line="101" selection-end-line="101" />
               <folding>
                 <element signature="e#107#165#0" expanded="true" />
               </folding>
@@ -90,11 +95,11 @@
         <option value="$PROJECT_DIR$/Assignments/AssignmentTwo/QuickSort.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentTwo/MergeSort.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentTwo/InsertionSort.py" />
-        <option value="$PROJECT_DIR$/Assignments/AssignmentTwo/HashTable.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentTwo/tester.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentTwo/BinarySearch.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentTwo/LinearSearch.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentTwo/RandomSearchAndHash.py" />
+        <option value="$PROJECT_DIR$/Assignments/AssignmentTwo/HashTable.py" />
       </list>
     </option>
   </component>
@@ -321,12 +326,12 @@
       <workItem from="1551751971076" duration="4824000" />
       <workItem from="1551877977874" duration="3829000" />
       <workItem from="1552253546993" duration="9290000" />
-      <workItem from="1552328278965" duration="2271000" />
+      <workItem from="1552328278965" duration="3940000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87899000" />
+    <option name="totallyTimeSpent" value="89568000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -482,13 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentTwo/HashTable.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/AssignmentOne/MyArrayStack.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -519,11 +517,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/AssignmentTwo/RandomSearchAndHash.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="59" column="63" selection-start-line="59" selection-start-column="63" selection-end-line="59" selection-end-column="63" />
+        <state relative-caret-position="338">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
           <folding>
             <element signature="e#107#165#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentTwo/HashTable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="79" column="39" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
         </state>
       </provider>
     </entry>
