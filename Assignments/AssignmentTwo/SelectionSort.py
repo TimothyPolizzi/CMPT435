@@ -24,22 +24,22 @@ def selection_sort(to_sort: List[str]) -> List[str]:
     comparisons = 0
 
     i = 0
-    while i < (to_sort_copy.__len__() - 1):
+    while i < to_sort_copy.__len__() - 1:
 
         # print(i)
         j = i + 1
         current_smallest = i
 
-        while j < (to_sort_copy.__len__()):
+        while j < to_sort_copy.__len__():
 
             # print(j)
             # print(to_sort_copy[current_smallest])
             # print(to_sort_copy[j])
             # print(to_sort_copy[current_smallest] > to_sort_copy[j])
+            comparisons = comparisons + 1
             if to_sort_copy[current_smallest] > to_sort_copy[j]:
 
                 current_smallest = j
-                comparisons = comparisons + 1
 
             j = j + 1
 

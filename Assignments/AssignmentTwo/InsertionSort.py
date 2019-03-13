@@ -27,9 +27,10 @@ def insertion_sort(to_sort: List[str]) -> List[str]:
     while i < to_sort_copy.__len__():
         j = i
         while j > 0 and to_sort_copy[j-1] > to_sort_copy[j]:
-            swap(j-1, j, to_sort_copy)
             comparisons = comparisons + 1
+            swap(j-1, j, to_sort_copy)
             j = j - 1
+        comparisons = comparisons + 1
         i = i + 1
 
     print("Comparisons: " + str(comparisons))

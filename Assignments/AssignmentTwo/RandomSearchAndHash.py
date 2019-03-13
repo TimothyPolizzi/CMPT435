@@ -7,6 +7,9 @@ from Assignments.AssignmentOne.FileReader import read_file
 from Assignments.AssignmentTwo.HashTable import HashTable
 from Assignments.AssignmentTwo.BinarySearch import binary_search
 from Assignments.AssignmentTwo.LinearSearch import linear_search
+from Assignments.AssignmentTwo.SelectionSort import selection_sort
+from Assignments.AssignmentTwo.InsertionSort import insertion_sort
+from Assignments.AssignmentTwo.MergeSort import merge_sort
 from Assignments.AssignmentTwo.QuickSort import quick_sort
 from random import randint
 from typing import List
@@ -14,16 +17,19 @@ from typing import List
 
 def main():
     list_1 = read_file("../AssignmentOne/magicitems.txt")
+    selection_sort(list_1)
+    insertion_sort(list_1)
+    merge_sort(list_1)
     sorted_list = quick_sort(list_1)
 
-    hash_tbl = HashTable()
+    # hash_tbl = HashTable()
 
-    list_42 = get_42(list_1)
+    # list_42 = get_42(list_1)
     # binary(sorted_list, list_42)
     # linear(sorted_list, list_42)
 
-    add_all_to_table(hash_tbl, list_1)
-    get_all_from_table(hash_tbl, list_42)
+    # add_all_to_table(hash_tbl, list_1)
+    # get_all_from_table(hash_tbl, list_42)
 
 
 def get_42(str_list: List[str]) -> List[str]:
