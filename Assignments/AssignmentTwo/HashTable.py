@@ -62,6 +62,7 @@ class HashTable(object):
         Returns:
             The string that is removed from the hash table.
         """
+        self.comparisons = 0
         self.comparisons = self.comparisons + 1
 
         hash_val = self.calculate_hash(to_remove)

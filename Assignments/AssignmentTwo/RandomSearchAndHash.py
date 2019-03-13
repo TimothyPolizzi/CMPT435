@@ -13,25 +13,32 @@ from Assignments.AssignmentTwo.MergeSort import merge_sort
 from Assignments.AssignmentTwo.QuickSort import quick_sort
 from random import randint
 from typing import List
+import math
 
 alan_arbitrary_value = 42
 
 
 def main():
     list_1 = read_file("../AssignmentOne/magicitems.txt")
+    # print("Selection Sort: ")
     # selection_sort(list_1)
+    # print("Insertion Sort: ")
     # insertion_sort(list_1)
+    # print("Merge Sort: ")
     # merge_sort(list_1)
+    print("Quick Sort: ")
     sorted_list = quick_sort(list_1)
 
-    # hash_tbl = HashTable()
+    hash_tbl = HashTable()
 
     list_42 = get_42(list_1)
-    linear(sorted_list, list_42)
+    # print("Linear Search:")
+    # linear(sorted_list, list_42)
+    # print("Binary Search:")
     # binary(sorted_list, list_42)
 
-    # add_all_to_table(hash_tbl, list_1)
-    # get_all_from_table(hash_tbl, list_42)
+    add_all_to_table(hash_tbl, list_1)
+    print(get_all_from_table(hash_tbl, list_42))
 
 
 def get_42(str_list: List[str]) -> List[str]:
@@ -62,8 +69,14 @@ def binary(search_in: List[str], run_on: List[str]):
         run_on(List[str]): The list of strings to search.
         search_in(List[str]): The list of strings to search in.
     """
+    comparisons = 0
+
     for string in run_on:
-        print(binary_search(search_in, string))
+        tuple_result = binary_search(search_in, string)
+        index = tuple_result[0]
+        comparisons = comparisons + tuple_result[1]
+        print(str(index))
+    print("Average comparisons: " + str(math.ceil(comparisons / alan_arbitrary_value)))
 
 
 def linear(search_in: List[str], run_on: List[str]):
@@ -78,7 +91,7 @@ def linear(search_in: List[str], run_on: List[str]):
         index = linear_search(search_in, string)
         running_total = running_total + index
         print(str(index))
-    print(str(running_total / alan_arbitrary_value))
+    print("Average comparisons: " + str(math.ceil(running_total / alan_arbitrary_value)))
 
 
 def add_all_to_table(table: HashTable, list_to_add: List[str]):
@@ -103,12 +116,24 @@ def get_all_from_table(table: HashTable, list_to_get: List[str]) -> List[str]:
         A list containing all values removed from the table.
     """
     return_list = []
+    comp_sum = 0
 
     for item in list_to_get:
         inner_list = table.get_list(table.calculate_hash(item))
-        print(item + ": [" + '; '.join(inner_list) + "]")
-        return_list.append(table.remove(item))
+        if inner_list is not None:
+            print(item + ": [" + '; '.join(inner_list) + "]")
+        else:
+            print("None")
 
+        removed_item = table.remove(item)
+        print("Comparisons: " + str(table.comparisons))
+        comp_sum = comp_sum + table.comparisons
+        if removed_item is not None:
+            return_list.append(removed_item.val)
+        else:
+            return_list.append(None)
+
+    print("Avg Comparisons: " + str(math.ceil(comp_sum / len(list_to_get))))
     return return_list
 
 
