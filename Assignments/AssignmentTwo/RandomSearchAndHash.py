@@ -14,19 +14,21 @@ from Assignments.AssignmentTwo.QuickSort import quick_sort
 from random import randint
 from typing import List
 
+alan_arbitrary_value = 42
+
 
 def main():
     list_1 = read_file("../AssignmentOne/magicitems.txt")
-    selection_sort(list_1)
-    insertion_sort(list_1)
-    merge_sort(list_1)
+    # selection_sort(list_1)
+    # insertion_sort(list_1)
+    # merge_sort(list_1)
     sorted_list = quick_sort(list_1)
 
     # hash_tbl = HashTable()
 
-    # list_42 = get_42(list_1)
+    list_42 = get_42(list_1)
+    linear(sorted_list, list_42)
     # binary(sorted_list, list_42)
-    # linear(sorted_list, list_42)
 
     # add_all_to_table(hash_tbl, list_1)
     # get_all_from_table(hash_tbl, list_42)
@@ -45,7 +47,7 @@ def get_42(str_list: List[str]) -> List[str]:
     """
     items = []
 
-    for i in range(42):
+    for i in range(alan_arbitrary_value):
         to_add = str_list[randint(0, 665)]
         # print(str(i) + " " + to_add)
         items.append(to_add)
@@ -71,8 +73,12 @@ def linear(search_in: List[str], run_on: List[str]):
         run_on(List[str]): The list of strings to search.
         search_in(List[str]): The list of strings to search in.
     """
+    running_total = 0
     for string in run_on:
-        print(linear_search(search_in, string))
+        index = linear_search(search_in, string)
+        running_total = running_total + index
+        print(str(index))
+    print(str(running_total / alan_arbitrary_value))
 
 
 def add_all_to_table(table: HashTable, list_to_add: List[str]):
