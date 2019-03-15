@@ -30,7 +30,7 @@ def quick_sort(to_sort: List[str]):
     return temp_list
 
 
-def __quick_sort_helper(to_sort: List[str], low, high):
+def __quick_sort_helper(to_sort: List[str], low: int, high: int):
     if high > low:  # Should this method run?
         pivot = to_sort[low]
         left = low
@@ -42,15 +42,16 @@ def __quick_sort_helper(to_sort: List[str], low, high):
             while to_sort[left] < pivot:  # increment left until it has the number of spaces the pivot is from the left
                 left = left + 1
                 comparisons = comparisons + 1
+
             while to_sort[right] > pivot:  # same as the previous loop, but this time from the right
                 right = right - 1
                 comparisons = comparisons + 1
+
+            comparisons = comparisons + 1
             if left <= right:  # if nothing has killed itself yet, swap the left and right items
                 temp = to_sort[left]
                 to_sort[left] = to_sort[right]
                 to_sort[right] = temp
-
-                comparisons = comparisons + 1
 
                 left = left + 1
                 right = right - 1
