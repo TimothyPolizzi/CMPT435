@@ -6,13 +6,11 @@ __email__ = 'Timothy.Polizzi1@marist.edu'
 
 class GraphMatrix(object):
 
-    def __init__(self, num_of_vertices):
-        self.inner_list = [1]*num_of_vertices
+    def __init__(self):
+        self.inner_list = []
 
-        for i in range(num_of_vertices):
-            self.inner_list[i] = []
-            for n in range(num_of_vertices):
-                self.inner_list[i].append("x")
+    def add_vertex(self, vertex_num: int):
+        self.inner_list.append([])
 
     def add_edge(self, vertex_1: int, vertex_2: int):
         """ Adds an edge to the graph between two vertices.
