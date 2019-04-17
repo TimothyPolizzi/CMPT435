@@ -71,7 +71,7 @@ class GraphMatrix(object):
         self.filled = True
         return return_bool
 
-    def print_matrix(self):
+    def print_graph(self):
         """ Prints out the matrix
 
             Prints the matrix out in a simple square format.

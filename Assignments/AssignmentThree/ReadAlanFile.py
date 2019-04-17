@@ -5,6 +5,7 @@ __email__ = 'Timothy.Polizzi1@marist.edu'
 
 from typing import List
 from Assignments.AssignmentThree.GraphMatrix import GraphMatrix
+from Assignments.AssignmentThree.AdjacencyList import AdjacencyList
 
 
 def main():
@@ -44,15 +45,18 @@ def read_file(path_to_file: str) -> List[str]:
 
 def generate_graph(to_generate_with: List[str]):
     matrices = []
+    adj_lists = []
 
     for line in to_generate_with:
         if line.startswith("new"):
             matrices.append(GraphMatrix())
+            adj_lists.append(AdjacencyList())
 
         elif line.startswith("add vertex"):
             to_add = int(line.rsplit(' ', 1)[1])
 
             matrices[len(matrices) - 1].add_vertex(to_add)
+            adj_lists[len(adj_lists) - 1].add_vertex(to_add)
 
         elif line.startswith("add edge"):
             # Break down the string that contains the line into the numbers and not numbers as separate strings
@@ -61,10 +65,24 @@ def generate_graph(to_generate_with: List[str]):
             vertex_1 = int(last_three[1])
             vertex_2 = int(last_three[3])
 
-            current_matrix = matrices[len(matrices) - 1]
-            if not current_matrix.filled:
-                current_matrix.fill_matrix()
-            current_matrix.add_edge(vertex_1, vertex_2)
+            current_index = len(matrices) - 1
+
+            if not matrices[current_index].filled:
+                matrices[current_index].fill_matrix()
+            matrices[current_index].add_edge(vertex_1, vertex_2)
+
+            adj_lists[current_index].add_edge(vertex_1, vertex_2)
+
+    # adj_lists[0].print_graph()
+    print_lists(matrices, adj_lists)
+
+
+# This was a mistake, trust me
+def print_lists(*lists):
+    for item in lists:
+        for s_item in item:
+            s_item.print_graph()
+            print()
 
 
 if __name__ == '__main__':
