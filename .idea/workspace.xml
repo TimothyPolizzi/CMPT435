@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57c776bd-bc12-453a-8147-4f10e126c8cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assignments/AssignmentThree/AdjacencyList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignments/AssignmentThree/GraphMatrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentThree/GraphMatrix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignments/AssignmentThree/ReadAlanFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentThree/ReadAlanFile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignments/AssignmentThree/Tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentThree/Tester.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignments/AssignmentThree/LinkedGraph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,19 +24,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/GraphMatrix.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/ReadAlanFile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="76" column="4" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
+            <state relative-caret-position="45">
+              <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
               <folding>
                 <element signature="e#142#165#0" expanded="true" />
               </folding>
@@ -49,20 +38,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/Tester.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#58#121#0" expanded="true" />
+                <element signature="e#208#486#0" />
+                <element signature="e#177#329#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/AdjacencyList.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/LinkedGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-82">
-              <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+            <state relative-caret-position="1170">
+              <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignments/AssignmentTwo/HashTable.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -116,8 +116,9 @@
         <option value="$PROJECT_DIR$/Assignments/AssignmentTwo/QuickSort.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentThree/AdjacencyList.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentThree/GraphMatrix.py" />
-        <option value="$PROJECT_DIR$/Assignments/AssignmentThree/Tester.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentThree/ReadAlanFile.py" />
+        <option value="$PROJECT_DIR$/Assignments/AssignmentThree/Tester.py" />
+        <option value="$PROJECT_DIR$/Assignments/AssignmentThree/LinkedGraph.py" />
       </list>
     </option>
   </component>
@@ -359,12 +360,12 @@
       <workItem from="1555286754858" duration="3140000" />
       <workItem from="1555519938551" duration="20000" />
       <workItem from="1555519978859" duration="3793000" />
-      <workItem from="1555530383518" duration="4683000" />
+      <workItem from="1555530383518" duration="6629000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108759000" />
+    <option name="totallyTimeSpent" value="110705000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -379,12 +380,12 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23667206" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23667206" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -565,13 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentTwo/HashTable.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/AssignmentTwo/tester.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="593">
@@ -620,21 +614,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/Tester.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#58#121#0" expanded="true" />
+            <element signature="e#208#486#0" />
+            <element signature="e#177#329#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/ReadAlanFile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="76" column="4" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
+        <state relative-caret-position="45">
+          <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
           <folding>
             <element signature="e#142#165#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentTwo/HashTable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/LinkedGraph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
         </state>
       </provider>
     </entry>
