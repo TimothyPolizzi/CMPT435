@@ -8,9 +8,24 @@ class GraphMatrix(object):
 
     def __init__(self):
         self.inner_list = []
+        self.filled = False
 
     def add_vertex(self, vertex_num: int):
-        self.inner_list.append([])
+        """ Adds a new vertex to the matrix
+
+        Adds a logical vertex to the graph as a new vertex
+
+        Args:
+            vertex_num: The number of the vertex being added.
+
+        Returns:
+            A boolean value that is true if it worked, false otherwise.
+        """
+        return_bool = True
+
+        self.inner_list.append(['t'])
+
+        return return_bool
 
     def add_edge(self, vertex_1: int, vertex_2: int):
         """ Adds an edge to the graph between two vertices.
@@ -35,11 +50,33 @@ class GraphMatrix(object):
 
         return to_return
 
+    def fill_matrix(self):
+        """ Fills the matrix out.
+
+        Python's lists cannot be set to a definite size, thus must be filled with values if they need to be. This method
+        fills out the lists so the program can use them more effectively.
+
+        Returns:
+            A boolean that is true if the list was able to filled out successfully, and false otherwise.
+        """
+        return_bool = True
+
+        for i in self.inner_list:
+            for n in range(len(self.inner_list)):
+                if n < len(i) and i[n] is not None:
+                    i[n] = 'x'
+                else:
+                    i.append('x')
+
+        self.filled = True
+        return return_bool
+
     def print_matrix(self):
         """ Prints out the matrix
 
             Prints the matrix out in a simple square format.
         """
+
         for i in self.inner_list:
             for j in i:
                 print(j, end=" ")

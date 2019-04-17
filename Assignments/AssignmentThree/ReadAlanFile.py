@@ -13,7 +13,7 @@ def main():
 
     string_of_file = read_file(path)
 
-    generate_matrix_graph(string_of_file)
+    generate_graph(string_of_file)
 
 
 def read_file(path_to_file: str) -> List[str]:
@@ -42,21 +42,29 @@ def read_file(path_to_file: str) -> List[str]:
     return string_array
 
 
-def generate_matrix_graph(to_generate_with: List[str]):
+def generate_graph(to_generate_with: List[str]):
     matrices = []
 
     for line in to_generate_with:
         if line.startswith("new"):
             matrices.append(GraphMatrix())
+
         elif line.startswith("add vertex"):
-            to_add = int(line[len(line) - 1])
-            print(to_add)
+            to_add = int(line.rsplit(' ', 1)[1])
+
             matrices[len(matrices) - 1].add_vertex(to_add)
+
         elif line.startswith("add edge"):
-            vertex_1 = int(line[len(line) - 5])  # TODO: Read in numbers of 2+ digits
-            vertex_2 = int(line[len(line) - 1])
-            print(vertex_1,  vertex_2)
-            matrices[len(matrices) - 1].add_edge(vertex_1, vertex_2)
+            # Break down the string that contains the line into the numbers and not numbers as separate strings
+            last_three = line.rsplit(' ', 3)
+            # Take the numbers in the list of strings and now we have the vertices
+            vertex_1 = int(last_three[1])
+            vertex_2 = int(last_three[3])
+
+            current_matrix = matrices[len(matrices) - 1]
+            if not current_matrix.filled:
+                current_matrix.fill_matrix()
+            current_matrix.add_edge(vertex_1, vertex_2)
 
 
 if __name__ == '__main__':

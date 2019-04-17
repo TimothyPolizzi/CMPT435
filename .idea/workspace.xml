@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57c776bd-bc12-453a-8147-4f10e126c8cd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignments/AssignmentThree/GraphMatrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentThree/GraphMatrix.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignments/AssignmentThree/ReadAlanFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentThree/ReadAlanFile.py" afterDir="false" />
     </list>
@@ -27,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/GraphMatrix.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+            <state relative-caret-position="308">
+              <caret line="64" column="47" lean-forward="true" selection-start-line="64" selection-start-column="47" selection-end-line="64" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -36,7 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/ReadAlanFile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="990">
+              <caret line="66" column="55" selection-start-line="66" selection-start-column="55" selection-end-line="66" selection-end-column="55" />
               <folding>
                 <element signature="e#142#165#0" expanded="true" />
               </folding>
@@ -118,6 +118,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -140,7 +141,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -344,22 +344,23 @@
       <workItem from="1555286754858" duration="3140000" />
       <workItem from="1555519938551" duration="20000" />
       <workItem from="1555519978859" duration="3793000" />
+      <workItem from="1555530383518" duration="2630000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104076000" />
+    <option name="totallyTimeSpent" value="106706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23344104" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23667206" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -387,16 +388,16 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Assignments/AssignmentThree/ReadAlanFile.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/Assignments/AssignmentThree/GraphMatrix.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CMPT435$Tester.coverage" NAME="Tester Coverage Results" MODIFIED="1555523416039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentThree" />
-    <SUITE FILE_PATH="coverage/CMPT435$ReadAlanFile.coverage" NAME="ReadAlanFile Coverage Results" MODIFIED="1555523770933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentThree" />
+    <SUITE FILE_PATH="coverage/CMPT435$ReadAlanFile.coverage" NAME="ReadAlanFile Coverage Results" MODIFIED="1555533101941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentThree" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -578,20 +579,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/FileReader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="8" selection-start-line="8" selection-end-line="27" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/GraphMatrix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/FileReader.py" />
     <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/Tester.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -599,9 +587,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/GraphMatrix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="64" column="47" lean-forward="true" selection-start-line="64" selection-start-column="47" selection-end-line="64" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/ReadAlanFile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="990">
+          <caret line="66" column="55" selection-start-line="66" selection-start-column="55" selection-end-line="66" selection-end-column="55" />
           <folding>
             <element signature="e#142#165#0" expanded="true" />
           </folding>
