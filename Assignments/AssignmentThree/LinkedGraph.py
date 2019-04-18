@@ -53,7 +53,7 @@ class LinkedGraph(object):
         to_return = None
 
         for node in self.vertex_list:
-            if node.value is to_find:
+            if node.value[0] is to_find:
                 to_return = node
 
         return to_return
@@ -78,9 +78,36 @@ class LinkedGraph(object):
 
         return to_return
 
-    def breadth_first_traversal(self):
-        # TODO: Implement
-        return
+    def breadth_first_traversal(self, start: int):
+        """ A breadth first traversal through the graph.
+
+        A way to traverse the graph, by moving from one node to all adjacent nodes, before moving on to do the process
+        again.
+
+        Args:
+            start: The node to start the traversal on.
+
+        Returns:
+            The list of traversed nodes in breadth first order.
+        """
+        traverse_list = []
+        visited = [False] * len(self.vertex_list)
+        begin = self.find_node(start)
+
+        queue = [begin]
+        visited[begin.value[0]-1] = True
+        traverse_list.append(begin)
+
+        while queue:
+            begin = queue.pop(0)
+            print(begin.value[0], end=" ")
+
+            for i in begin.connected_nodes:
+                if not visited[i.value[0] - 1]:
+                    queue.append(i)
+                    visited[i.value[0]-1] = True
+                    traverse_list.append(i)
+        return traverse_list
 
     def depth_first_traversal(self):
         # TODO: Implement

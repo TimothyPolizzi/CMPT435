@@ -4,11 +4,13 @@
 
 from Assignments.AssignmentThree.GraphMatrix import GraphMatrix
 from Assignments.AssignmentThree.AdjacencyList import AdjacencyList
+from Assignments.AssignmentThree.LinkedGraph import LinkedGraph
 
 
 def main():
     # test_matrix()
-    test_adjacency()
+    # test_adjacency()
+    test_nodes()
 
 
 def test_adjacency():
@@ -36,6 +38,21 @@ def test_matrix():
     test_matrix1.add_edge(3, 4)
     test_matrix1.add_edge(5, 5)
     test_matrix1.print_graph()
+
+
+def test_nodes():
+    test_node = LinkedGraph()
+    test_node.add_vertex(1)
+    test_node.add_vertex(2)
+    test_node.add_vertex(3)
+    test_node.add_vertex(4)
+    test_node.add_vertex(5)
+    test_node.add_edge(1, 2)
+    test_node.add_edge(2, 5)
+    test_node.add_edge(3, 4)
+    test_node.add_edge(3, 5)
+    test_node.add_edge(5, 5)
+    test_node.breadth_first_traversal(1)
     
 
 if __name__ == '__main__':

@@ -6,6 +6,7 @@ __email__ = 'Timothy.Polizzi1@marist.edu'
 from typing import List
 from Assignments.AssignmentThree.GraphMatrix import GraphMatrix
 from Assignments.AssignmentThree.AdjacencyList import AdjacencyList
+from Assignments.AssignmentThree.LinkedGraph import LinkedGraph
 
 
 def main():
@@ -46,21 +47,29 @@ def read_file(path_to_file: str) -> List[str]:
 def generate_graph(to_generate_with: List[str]):
     matrices = []
     adj_lists = []
+    node_graph = []
 
     for line in to_generate_with:
         if line.startswith("new"):
+
             matrices.append(GraphMatrix())
             adj_lists.append(AdjacencyList())
+            node_graph.append(LinkedGraph())
 
         elif line.startswith("add vertex"):
-            to_add = int(line.rsplit(' ', 1)[1])
 
-            matrices[len(matrices) - 1].add_vertex(to_add)
-            adj_lists[len(adj_lists) - 1].add_vertex(to_add)
+            to_add = int(line.rsplit(' ', 1)[1])
+            current_index = len(matrices) - 1
+
+            matrices[current_index].add_vertex(to_add)
+            adj_lists[current_index].add_vertex(to_add)
+            node_graph[current_index].add_vertex(to_add)
 
         elif line.startswith("add edge"):
+
             # Break down the string that contains the line into the numbers and not numbers as separate strings
             last_three = line.rsplit(' ', 3)
+
             # Take the numbers in the list of strings and now we have the vertices
             vertex_1 = int(last_three[1])
             vertex_2 = int(last_three[3])
@@ -73,11 +82,14 @@ def generate_graph(to_generate_with: List[str]):
 
             adj_lists[current_index].add_edge(vertex_1, vertex_2)
 
-    # adj_lists[0].print_graph()
-    print_lists(matrices, adj_lists)
+            node_graph[current_index].add_edge(vertex_1, vertex_2)
+
+    node_graph[0].breadth_first_traversal(1)
+    node_graph[0].depth_first_traversal(1)
+    # print_lists(matrices, adj_lists)
 
 
-# This was a mistake, trust me
+# This was a mistake, trust me, but its working so idc
 def print_lists(*lists):
     for item in lists:
         for s_item in item:
