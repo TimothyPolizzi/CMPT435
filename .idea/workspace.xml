@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57c776bd-bc12-453a-8147-4f10e126c8cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assignments/AssignmentThree/BinarySearchTree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignments/AssignmentThree/LinkedGraph.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentThree/LinkedGraph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignments/AssignmentThree/ReadAlanFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentThree/ReadAlanFile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignments/AssignmentThree/Tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentThree/Tester.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/ReadAlanFile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="103" column="15" selection-start-line="103" selection-start-column="15" selection-end-line="103" selection-end-column="15" />
+            <state relative-caret-position="271">
+              <caret line="107" selection-start-line="107" selection-end-line="107" />
               <folding>
                 <element signature="e#142#165#0" expanded="true" />
               </folding>
@@ -39,15 +38,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/Tester.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+            <state relative-caret-position="233">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="e#58#121#0" expanded="true" />
-                <element signature="e#273#545#0" />
-                <element signature="e#571#912#0" />
-                <element signature="e#940#1212#0" />
-                <element signature="e#1413#1764#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/BinarySearchTree.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -55,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/LinkedGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="123" column="55" selection-start-line="123" selection-start-column="55" selection-end-line="123" selection-end-column="55" />
+            <state relative-caret-position="280">
+              <caret line="136" column="23" selection-start-line="136" selection-start-column="23" selection-end-line="136" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -115,6 +119,7 @@
         <option value="$PROJECT_DIR$/Assignments/AssignmentThree/GraphMatrix.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentThree/Tester.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentThree/ReadAlanFile.py" />
+        <option value="$PROJECT_DIR$/Assignments/AssignmentThree/BinarySearchTree.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentThree/LinkedGraph.py" />
       </list>
     </option>
@@ -191,7 +196,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ReadAlanFile">
+  <component name="RunManager" selected="Python.Tester">
     <configuration name="PalindromeCheck" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CMPT435" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -304,8 +309,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ReadAlanFile" />
         <item itemvalue="Python.Tester" />
+        <item itemvalue="Python.ReadAlanFile" />
         <item itemvalue="Python.RandomSearchAndHash" />
         <item itemvalue="Python.tester (1)" />
         <item itemvalue="Python.PalindromeCheck" />
@@ -358,12 +363,12 @@
       <workItem from="1555519938551" duration="20000" />
       <workItem from="1555519978859" duration="3793000" />
       <workItem from="1555530383518" duration="7158000" />
-      <workItem from="1555549260850" duration="6343000" />
+      <workItem from="1555549260850" duration="8665000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117577000" />
+    <option name="totallyTimeSpent" value="119899000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -407,9 +412,20 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Assignments/AssignmentThree/LinkedGraph.py</url>
+          <line>134</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CMPT435$Tester.coverage" NAME="Tester Coverage Results" MODIFIED="1555563388704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentThree" />
-    <SUITE FILE_PATH="coverage/CMPT435$ReadAlanFile.coverage" NAME="ReadAlanFile Coverage Results" MODIFIED="1555563435290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentThree" />
+    <SUITE FILE_PATH="coverage/CMPT435$Tester.coverage" NAME="Tester Coverage Results" MODIFIED="1555566203398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentThree" />
+    <SUITE FILE_PATH="coverage/CMPT435$ReadAlanFile.coverage" NAME="ReadAlanFile Coverage Results" MODIFIED="1555564647746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentThree" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -585,13 +601,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/FileReader.py" />
-    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/AdjacencyList.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
-          <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/GraphMatrix.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -606,34 +615,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/Tester.py">
+    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/AdjacencyList.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding>
-            <element signature="e#58#121#0" expanded="true" />
-            <element signature="e#273#545#0" />
-            <element signature="e#571#912#0" />
-            <element signature="e#940#1212#0" />
-            <element signature="e#1413#1764#0" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/BinarySearchTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/ReadAlanFile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="103" column="15" selection-start-line="103" selection-start-column="15" selection-end-line="103" selection-end-column="15" />
+        <state relative-caret-position="271">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
           <folding>
             <element signature="e#142#165#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/Tester.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="e#58#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/LinkedGraph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="123" column="55" selection-start-line="123" selection-start-column="55" selection-end-line="123" selection-end-column="55" />
+        <state relative-caret-position="280">
+          <caret line="136" column="23" selection-start-line="136" selection-start-column="23" selection-end-line="136" selection-end-column="23" />
         </state>
       </provider>
     </entry>
