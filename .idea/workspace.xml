@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57c776bd-bc12-453a-8147-4f10e126c8cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assignments/AssignmentThree/BinarySearchTree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignments/AssignmentThree/BinarySearchTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentThree/BinarySearchTree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignments/AssignmentThree/LinkedGraph.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentThree/LinkedGraph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignments/AssignmentThree/Tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentThree/Tester.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,29 +39,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/Tester.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="265">
+              <caret line="84" selection-start-line="84" selection-end-line="84" />
               <folding>
                 <element signature="e#58#121#0" expanded="true" />
+                <element signature="e#387#659#0" />
+                <element signature="e#685#1026#0" />
+                <element signature="e#1059#1495#0" />
+                <element signature="e#1526#1960#0" />
+                <marker date="1555567416571" expanded="true" signature="411:436" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/BinarySearchTree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="578">
+              <caret line="213" column="16" lean-forward="true" selection-start-line="213" selection-start-column="16" selection-end-line="213" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/LinkedGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="136" column="23" selection-start-line="136" selection-start-column="23" selection-end-line="136" selection-end-column="23" />
+            <state relative-caret-position="888">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
         </entry>
@@ -117,10 +123,10 @@
         <option value="$PROJECT_DIR$/Assignments/AssignmentTwo/QuickSort.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentThree/AdjacencyList.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentThree/GraphMatrix.py" />
-        <option value="$PROJECT_DIR$/Assignments/AssignmentThree/Tester.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentThree/ReadAlanFile.py" />
-        <option value="$PROJECT_DIR$/Assignments/AssignmentThree/BinarySearchTree.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentThree/LinkedGraph.py" />
+        <option value="$PROJECT_DIR$/Assignments/AssignmentThree/Tester.py" />
+        <option value="$PROJECT_DIR$/Assignments/AssignmentThree/BinarySearchTree.py" />
       </list>
     </option>
   </component>
@@ -363,12 +369,12 @@
       <workItem from="1555519938551" duration="20000" />
       <workItem from="1555519978859" duration="3793000" />
       <workItem from="1555530383518" duration="7158000" />
-      <workItem from="1555549260850" duration="8665000" />
+      <workItem from="1555549260850" duration="16413000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119899000" />
+    <option name="totallyTimeSpent" value="127647000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -388,7 +394,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.2849315" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.2849315" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -420,11 +426,16 @@
           <line>134</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Assignments/AssignmentThree/Tester.py</url>
+          <line>84</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CMPT435$Tester.coverage" NAME="Tester Coverage Results" MODIFIED="1555566203398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentThree" />
+    <SUITE FILE_PATH="coverage/CMPT435$Tester.coverage" NAME="Tester Coverage Results" MODIFIED="1555567976586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentThree" />
     <SUITE FILE_PATH="coverage/CMPT435$ReadAlanFile.coverage" NAME="ReadAlanFile Coverage Results" MODIFIED="1555564647746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentThree" />
   </component>
   <component name="editorHistoryManager">
@@ -622,13 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/BinarySearchTree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/ReadAlanFile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
@@ -641,18 +645,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/Tester.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="265">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
           <folding>
             <element signature="e#58#121#0" expanded="true" />
+            <element signature="e#387#659#0" />
+            <element signature="e#685#1026#0" />
+            <element signature="e#1059#1495#0" />
+            <element signature="e#1526#1960#0" />
+            <marker date="1555567416571" expanded="true" signature="411:436" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/LinkedGraph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="136" column="23" selection-start-line="136" selection-start-column="23" selection-end-line="136" selection-end-column="23" />
+        <state relative-caret-position="888">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/BinarySearchTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="213" column="16" lean-forward="true" selection-start-line="213" selection-start-column="16" selection-end-line="213" selection-end-column="16" />
         </state>
       </provider>
     </entry>

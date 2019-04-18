@@ -5,13 +5,15 @@
 from Assignments.AssignmentThree.GraphMatrix import GraphMatrix
 from Assignments.AssignmentThree.AdjacencyList import AdjacencyList
 from Assignments.AssignmentThree.LinkedGraph import LinkedGraph
+from Assignments.AssignmentThree.BinarySearchTree import BinarySearchTree
 
 
 def main():
     # test_matrix()
     # test_adjacency()
-    test_nodes_breadth()
-    test_nodes_depth()
+    # test_nodes_breadth()
+    # test_nodes_depth()
+    test_bst()
 
 
 def test_adjacency():
@@ -75,6 +77,14 @@ def test_nodes_depth():
     test_node.add_edge(5, 6)
     test_node.add_edge(5, 7)
     test_node.depth_first_traversal(1)
+
+
+def test_bst():
+    bst = BinarySearchTree()
+    bst.add("a")
+    bst.add("b")
+    bst.add("d")
+    bst.add("c")
 
 
 if __name__ == '__main__':

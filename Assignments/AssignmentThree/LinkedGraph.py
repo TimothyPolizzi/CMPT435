@@ -44,7 +44,7 @@ class LinkedGraph(object):
 
         return to_return
 
-    def find_node(self, to_find: int) -> __Node:
+    def find_node(self, to_find) -> __Node:
         """ Finds a node in the graph based on it's value.
 
         Args:
