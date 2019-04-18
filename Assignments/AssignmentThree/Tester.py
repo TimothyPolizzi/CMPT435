@@ -10,7 +10,8 @@ from Assignments.AssignmentThree.LinkedGraph import LinkedGraph
 def main():
     # test_matrix()
     # test_adjacency()
-    test_nodes()
+    test_nodes_breadth()
+    test_nodes_depth()
 
 
 def test_adjacency():
@@ -40,20 +41,41 @@ def test_matrix():
     test_matrix1.print_graph()
 
 
-def test_nodes():
+def test_nodes_breadth():
     test_node = LinkedGraph()
     test_node.add_vertex(1)
     test_node.add_vertex(2)
     test_node.add_vertex(3)
     test_node.add_vertex(4)
     test_node.add_vertex(5)
+    test_node.add_vertex(6)
+    test_node.add_vertex(7)
     test_node.add_edge(1, 2)
-    test_node.add_edge(2, 5)
-    test_node.add_edge(3, 4)
-    test_node.add_edge(3, 5)
-    test_node.add_edge(5, 5)
+    test_node.add_edge(1, 5)
+    test_node.add_edge(2, 3)
+    test_node.add_edge(2, 4)
+    test_node.add_edge(5, 6)
+    test_node.add_edge(5, 7)
     test_node.breadth_first_traversal(1)
-    
+
+
+def test_nodes_depth():
+    test_node = LinkedGraph()
+    test_node.add_vertex(1)
+    test_node.add_vertex(2)
+    test_node.add_vertex(3)
+    test_node.add_vertex(4)
+    test_node.add_vertex(5)
+    test_node.add_vertex(6)
+    test_node.add_vertex(7)
+    test_node.add_edge(1, 2)
+    test_node.add_edge(1, 5)
+    test_node.add_edge(2, 3)
+    test_node.add_edge(2, 4)
+    test_node.add_edge(5, 6)
+    test_node.add_edge(5, 7)
+    test_node.depth_first_traversal(1)
+
 
 if __name__ == '__main__':
     main()

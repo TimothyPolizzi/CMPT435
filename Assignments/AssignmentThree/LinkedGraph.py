@@ -3,6 +3,8 @@
 __author__ = 'Tim Polizzi'
 __email__ = 'Timothy.Polizzi1@marist.edu'
 
+from typing import List
+
 
 class LinkedGraph(object):
 
@@ -90,13 +92,12 @@ class LinkedGraph(object):
         Returns:
             The list of traversed nodes in breadth first order.
         """
-        traverse_list = []
         visited = [False] * len(self.vertex_list)
         begin = self.find_node(start)
 
         queue = [begin]
         visited[begin.value[0]-1] = True
-        traverse_list.append(begin)
+        traverse_list = [begin]
 
         while queue:
             begin = queue.pop(0)
@@ -107,8 +108,35 @@ class LinkedGraph(object):
                     queue.append(i)
                     visited[i.value[0]-1] = True
                     traverse_list.append(i)
+        print()
         return traverse_list
 
-    def depth_first_traversal(self):
-        # TODO: Implement
-        return
+    def depth_first_traversal(self, start: int):
+        """ A depth first traversal through the graph.
+
+        A way to traverse the graph, by moving from one node to the next child node, until there are no further children
+        when it goes back up a step to continue in the other direction for child nodes.
+
+        Args:
+            start: The index of the node to start the traversal on.
+
+        Returns:
+            The list of items that have been traversed.
+        """
+        visited = [False] * len(self.vertex_list)
+        traverse_list = []
+
+        self.__depth_first_traversal_helper(start, visited, traverse_list)
+        print()
+        return traverse_list
+
+    def __depth_first_traversal_helper(self, start: int, visited: List[bool], traverse_list: List[int]):
+        visited[start-1] = True
+        traverse_list.append(start)
+        print(start, end=" ")
+
+        start_node = self.find_node(start)
+
+        for i in start_node.connected_nodes:
+            if not visited[i.value[0] - 1]:
+                self.__depth_first_traversal_helper(i.value[0], visited, traverse_list)

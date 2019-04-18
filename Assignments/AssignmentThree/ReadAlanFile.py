@@ -84,9 +84,8 @@ def generate_graph(to_generate_with: List[str]):
 
             node_graph[current_index].add_edge(vertex_1, vertex_2)
 
-    node_graph[0].breadth_first_traversal(1)
-    node_graph[0].depth_first_traversal(1)
-    # print_lists(matrices, adj_lists)
+    print_lists(matrices, adj_lists)
+    print_traversals(node_graph)
 
 
 # This was a mistake, trust me, but its working so idc
@@ -95,6 +94,14 @@ def print_lists(*lists):
         for s_item in item:
             s_item.print_graph()
             print()
+
+
+def print_traversals(traversals):
+    for trav in traversals:
+        trav.breadth_first_traversal(1)
+        print()
+        trav.depth_first_traversal(1)
+        print()
 
 
 if __name__ == '__main__':
