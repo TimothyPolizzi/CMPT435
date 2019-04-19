@@ -3,6 +3,8 @@
 __author__ = 'Tim Polizzi'
 __email__ = 'Timothy.Polizzi1@marist.edu'
 
+from typing import List
+
 
 class BinarySearchTree(object):
     class __TreeNode(object):
@@ -14,6 +16,8 @@ class BinarySearchTree(object):
     def __init__(self):
         self.root = None
         self.size = 0
+        self.comparisons = 0
+        self.comp_total = 0
 
     def contains(self, element: str) -> bool:
         """ Checks if a given item exists in the BST.
@@ -24,13 +28,24 @@ class BinarySearchTree(object):
         Returns:
             A boolean true or false, where true is if the item is in the BST and false otherwise.
         """
-        return self.__contains(self.root, element)
+        self.comparisons = 0
+
+        ret_bool = self.__contains(self.root, element)
+
+        print(self.comparisons)
+        self.comp_total += self.comparisons
+
+        return ret_bool
 
     def __contains(self, node: __TreeNode, element: str) -> bool:
+        self.comparisons += 1
+
         if node is None:
             return False
         elif node.value is element:
             return True
+
+        self.comparisons += 1
 
         if node.value > element:
             return self.__contains(node.left, element)
@@ -126,13 +141,45 @@ class BinarySearchTree(object):
                 return None
         return node
 
-    def depth_first_transversal(self):
-        # TODO
+    def depth_first_traversal(self) -> List[str]:
+        """ Traverses the BST in a vertical level pattern.
 
+        Returns:
+            A list containing the path taken by the traversal.
+        """
+        new_list = []
+        self.__depth_first_traversal(self.root, new_list)
+        return new_list
 
-    def breadth_first_transversal(self):
-        # TODO
+    def __depth_first_traversal(self, node: __TreeNode, ret_list: List[str]):
+        if node is None:
+            return
 
+        ret_list.append(node.value)
+        self.__depth_first_traversal(node.left, ret_list)
+        self.__depth_first_traversal(node.right, ret_list)
+
+    def breadth_first_traversal(self) -> List[str]:
+        """ Traverses the BST in a horizontal level pattern.
+
+        Returns:
+            A list containing the path taken by the traversal.
+        """
+        return self.__breadth_first_traversal(False)
+
+    def __breadth_first_traversal(self, include_null: bool) -> List[str]:
+        ret_list = []
+        queue = [self.root]
+
+        while queue:
+            head = queue.pop()
+            if head is None and include_null:
+                ret_list.append(None)
+            if head is not None:
+                ret_list.append(head.value)
+                queue.append(head.left)
+                queue.append(head.right)
+        return ret_list
 
     def min(self) -> str:
         """ Returns the smallest value in the BST.

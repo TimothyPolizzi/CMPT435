@@ -4,18 +4,25 @@ __author__ = 'Tim Polizzi'
 __email__ = 'Timothy.Polizzi1@marist.edu'
 
 from typing import List
+import random
 from Assignments.AssignmentThree.GraphMatrix import GraphMatrix
 from Assignments.AssignmentThree.AdjacencyList import AdjacencyList
 from Assignments.AssignmentThree.LinkedGraph import LinkedGraph
+from Assignments.AssignmentThree.BinarySearchTree import BinarySearchTree
 
 
 def main():
     # The variable below is the path to the graphs file, so that it can be read
-    path = "/Users/timpolizzi/Downloads/graphs.txt"
+    graph_path = "/Users/timpolizzi/Downloads/graphs.txt"
+    magic_path = "/Users/timpolizzi/Downloads/magicitems.txt"
 
-    string_of_file = read_file(path)
+    string_of_file = read_file(graph_path)
+    string_of_items = read_file(magic_path)
 
     generate_graph(string_of_file)
+    tree = generate_tree(string_of_items)
+
+    test_tree(tree, string_of_items)
 
 
 def read_file(path_to_file: str) -> List[str]:
@@ -94,6 +101,22 @@ def print_lists(*lists):
         for s_item in item:
             s_item.print_graph()
             print()
+
+
+def generate_tree(to_generate_with: List[str]):
+    bst = BinarySearchTree()
+
+    for item in to_generate_with:
+        bst.add(item)
+
+    return bst
+
+
+def test_tree(tree: BinarySearchTree, item_list: List[str]):
+    for i in range(42):
+        rand = random.randint(1, 666)
+        tree.contains(item_list[rand])
+    print("\n", tree.comp_total / 42)
 
 
 def print_traversals(traversals):

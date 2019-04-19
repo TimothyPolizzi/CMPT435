@@ -85,6 +85,12 @@ def test_bst():
     bst.add("b")
     bst.add("d")
     bst.add("c")
+    bst.add("e")
+    bst.add("z")
+    bst.add("a")
+    bst.add("f")
+    print(bst.depth_first_traversal())
+    print(bst.breadth_first_traversal())
 
 
 if __name__ == '__main__':
