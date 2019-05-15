@@ -89,32 +89,69 @@ class LinkedWeightedGraph(object):
 
         return to_return
 
-    def BellmanFord_sssp(self, source: __Vertex):
+    def bellman_ford_sssp(self, source: int):
         """ Bellman Ford single-sourced shortest path problem.
 
+        Solves which path to a point in a graph is the fastest from a single point, and will determine if there is a
+        negative-weight cycle that would cause there to be no minimum distance from points.
+
         Args:
-            source:
-
-        Returns:
-
+            source: The starting single point to figure out all paths from.
         """
-        distance = []
-        predecessor = []
+        distance = [inf] * len(self.vertex_list)
+        predecessor = [None] * len(self.vertex_list)
 
-        for vertex in range(len(self.vertex_list)):
-            distance[vertex] = inf
-            predecessor[vertex] = None
-
-            if self.vertex_list[vertex] == source:
-                distance[vertex] = 0
+        distance[source-1] = 0
 
         for i in range(len(self.vertex_list)):
             for edge in self.edge_list:
-                if distance[edge.vertex1] + edge.weight < distance[edge.vertex2]:
-                    distance[edge.vertex2] = distance[edge.vertex1] + edge.weight
-                    predecessor[edge.vertex2] = edge.vertex1
+                vertex1_index = edge.vertex1-1
+                vertex2_index = edge.vertex2-1
+
+                if distance[vertex1_index] + edge.weight < distance[vertex2_index]:
+                    distance[vertex2_index] = distance[vertex1_index] + edge.weight
+                    predecessor[vertex2_index] = edge.vertex1
 
         for edge in self.edge_list:
-            if distance[edge.vertex2] + edge.weight < distance[edge.vertex1]:
+            vertex1_index = edge.vertex1 - 1
+            vertex2_index = edge.vertex2 - 1
+
+            if distance[vertex1_index] + edge.weight < distance[vertex2_index]:
                 print("Graph contains a negative-weight cycle")
                 return
+        self.__sssp_results(source, distance, predecessor)
+
+    def __sssp_results(self, source: int, distance: List, predecessor: List):
+        for i in range(len(distance)):
+            print("{} -> {} cost is {};\tpath: {}".format(source, i+1, distance[i],
+                                                          self.__path(source -1, i, predecessor)))
+
+    def __path(self, source: int, goal: int, predecessor: List):
+        """ Interprets the path from the output predecessor list
+
+        Takes the output predecessor list from BellmanFord-sssp and interprets it into a string that follows the path
+        that it would take to traverse to the element in the graph in the shortest path.
+
+        Args:
+            source: The original starting point of the Single Source Shortest Path
+            goal: The final point in the path
+            predecessor: The list of all previously traversed points from the Bellman Ford SSSP
+
+        Returns:
+            A string that contains the proper path from the source to the goal.
+        """
+        arrow = " -> "
+        to_return = "{}".format(source + 1)
+        incr = goal
+        stack = [goal + 1]
+
+        while incr != source:
+            incr = predecessor[incr] - 1
+            stack.append(incr + 1)
+
+        stack.pop()  # this is to remove the excess start node
+
+        for item in range(len(stack)):
+            to_return = to_return + arrow + "{}".format(stack.pop())
+
+        return to_return

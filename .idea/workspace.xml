@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57c776bd-bc12-453a-8147-4f10e126c8cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assignments/AssignmentFour/LinkedWeightedGraph.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignments/AssignmentFour/ReadAlanFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignments/AssignmentFour/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignments/AssignmentFour/LinkedWeightedGraph.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentFour/LinkedWeightedGraph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignments/AssignmentFour/ReadAlanFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/AssignmentFour/ReadAlanFile.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assignments/AssignmentFour/LinkedWeightedGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-207">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="286">
+              <caret line="156" column="24" lean-forward="true" selection-start-line="156" selection-start-column="24" selection-end-line="156" selection-end-column="24" />
               <folding>
                 <element signature="e#124#147#0" expanded="true" />
               </folding>
@@ -40,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignments/AssignmentFour/ReadAlanFile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-11">
-              <caret line="75" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="1410">
+              <caret line="94" column="33" lean-forward="true" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
               <folding>
                 <element signature="e#142#165#0" expanded="true" />
               </folding>
@@ -105,8 +103,8 @@
         <option value="$PROJECT_DIR$/Assignments/AssignmentThree/Tester.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentThree/BinarySearchTree.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentThree/ReadAlanFile.py" />
-        <option value="$PROJECT_DIR$/Assignments/AssignmentFour/LinkedWeightedGraph.py" />
         <option value="$PROJECT_DIR$/Assignments/AssignmentFour/ReadAlanFile.py" />
+        <option value="$PROJECT_DIR$/Assignments/AssignmentFour/LinkedWeightedGraph.py" />
       </list>
     </option>
   </component>
@@ -139,12 +137,6 @@
               <item name="CMPT435" type="462c0819:PsiDirectoryNode" />
               <item name="Assignments" type="462c0819:PsiDirectoryNode" />
               <item name="AssignmentFour" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CMPT435" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMPT435" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignments" type="462c0819:PsiDirectoryNode" />
-              <item name="AssignmentThree" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -360,12 +352,12 @@
       <workItem from="1555638842828" duration="2406000" />
       <workItem from="1557003746370" duration="4096000" />
       <workItem from="1557436048592" duration="2221000" />
-      <workItem from="1557605070304" duration="2421000" />
+      <workItem from="1557605070304" duration="10665000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139076000" />
+    <option name="totallyTimeSpent" value="147320000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -385,8 +377,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.2849315" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.2849315" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
@@ -417,12 +409,17 @@
           <line>134</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Assignments/AssignmentFour/LinkedWeightedGraph.py</url>
+          <line>147</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CMPT435$Tester.coverage" NAME="Tester Coverage Results" MODIFIED="1555639855917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentThree" />
-    <SUITE FILE_PATH="coverage/CMPT435$ReadAlanFile__1_.coverage" NAME="ReadAlanFile (1) Coverage Results" MODIFIED="1557764617197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentFour" />
+    <SUITE FILE_PATH="coverage/CMPT435$ReadAlanFile__1_.coverage" NAME="ReadAlanFile (1) Coverage Results" MODIFIED="1557963129385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentFour" />
     <SUITE FILE_PATH="coverage/CMPT435$ReadAlanFile.coverage" NAME="ReadAlanFile Coverage Results" MODIFIED="1555641084738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignments/AssignmentThree" />
   </component>
   <component name="editorHistoryManager">
@@ -635,13 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/LinkedGraph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/ReadAlanFile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1092">
@@ -659,10 +649,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assignments/AssignmentThree/LinkedGraph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-371">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/AssignmentFour/ReadAlanFile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="1410">
+          <caret line="94" column="33" lean-forward="true" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
           <folding>
             <element signature="e#142#165#0" expanded="true" />
           </folding>
@@ -671,8 +668,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignments/AssignmentFour/LinkedWeightedGraph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="286">
+          <caret line="156" column="24" lean-forward="true" selection-start-line="156" selection-start-column="24" selection-end-line="156" selection-end-column="24" />
           <folding>
             <element signature="e#124#147#0" expanded="true" />
           </folding>

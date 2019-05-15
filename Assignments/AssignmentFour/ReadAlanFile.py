@@ -12,9 +12,11 @@ from Assignments.AssignmentFour.LinkedWeightedGraph import LinkedWeightedGraph
 
 def main():
     # The variable below is the path to the graphs file, so that it can be read
-    graph_path = input("What is the path to the file? > ")
+    # graph_path = input("What is the path to the file? > ")
 
-    string_of_file = read_file(graph_path)
+    lazy = "/Users/timpolizzi/Downloads/graphs2.txt"
+
+    string_of_file = read_file(lazy)  # change to graph_path on final run
 
     # show_read(string_of_file)
 
@@ -87,19 +89,12 @@ def generate_graph(to_generate_with: List[str]):
 
             lwg[current_index].add_edge(weight, vertex_1, vertex_2)
 
-
-def print_lists(*lists):
-    for item in lists:
-        for s_item in item:
-            s_item.print_graph()
-            print()
+    print_traversals(lwg)
 
 
 def print_traversals(traversals):
     for trav in traversals:
-        trav.breadth_first_traversal(1)
-        print()
-        trav.depth_first_traversal(1)
+        trav.bellman_ford_sssp(1)
         print()
 
 
