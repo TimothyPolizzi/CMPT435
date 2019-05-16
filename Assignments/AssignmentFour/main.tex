@@ -1,0 +1,118 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CMPT 435
+% Spring 2019
+% Assignment Three
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from: http://www.LaTeXTemplates.com
+% Original author: % Frits Wenneker (http://www.howtotex.com)
+% License: CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% Modified by Alan G. Labouseur  - alan@labouseur.com
+% Further Modified by Timothy M. Polizzi - Timpolizzi2@gmail.com
+% Code Listings by LaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------
+
+\documentclass[letterpaper, 10pt]{article} 
+
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{graphicx}
+\usepackage[lined,linesnumbered,commentsnumbered]{algorithm2e}
+\usepackage{listings}
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\usepackage{lastpage}
+\usepackage{url}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\fancyhead{} 
+% No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{page \thepage\ of \pageref{LastPage}}
+% Page numbering for center footer
+\fancyfoot[R]{}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{5pt} % Customize the height of the header
+
+%----------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------
+
+% Create horizontal rule command with 1 argument of height
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} 
+
+\title{	
+   \normalfont \normalsize 
+   \textsc{CMPT 435 - Spring 2019 - Dr. Labouseur} \\[10pt] % Header stuff.
+   \horrule{0.5pt} \\[0.25cm] 	% Top horizontal rule
+   \huge Assignment Four -- Directions and Spice\\     	    % Assignment title
+   \horrule{0.5pt} \\[0.25cm] 	% Bottom horizontal rule
+}
+
+\author{Timothy Polizzi \\ \normalsize Timothy.Polizzi1@Marist.edu}
+
+\date{\normalsize\today} 	% Today's date.
+
+\begin{document}
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------
+%   CONTENT SECTION
+%----------------------------------------------------------------
+
+\noindent
+
+\section{Bellman-Ford Single Source Shortest Path}
+The Bellman-Ford Single Source Shortest Path is an algorithm that is based off of Dijkstra's, where you give a source node in a graph and the shortest path to all nodes is listed. The difference between Dijkstra's and Bellman-Ford's is that Bellman-Ford's provides a way to check if there is an infinite negative-weight cycle which would mean any point on the graph can be traversed to in negative infinity weight.
+
+\subsection{Asymptotic Analysis}
+As the Bellman-Ford approach to the Single Source Shortest Path problem was based off of Dijkstra's as an attempt to fix an edge case, it does cost a bit more to do so. Specifically the time of the worst case becomes $\Theta(|E| |V|)$ while Dijkstra's is only $\Theta(|E| + |V| log |V|)$. On the other hand at best case the Bellman-Ford algorithm can be run in only $\Theta(|E|)$, as it can theoretically run once through the edges if all the edges are in maximum to minimum order. The worst case on the other hand is due to the possibility for a need each edge for each vertex.
+
+\section{Fractional Knapsack}
+Fractional Knapsack is a different take on the knapsack problem then 0-1 knapsack, where you take an item and split it into a knapsack. This allows for the method of greedy programming to work, and is more efficient.
+
+\subsection{Asymptotic Analysis}
+The weighted knapsack problem is able to be solved in $\theta(n)$ time which is due to only needing to be run through its list of items to be put into the bag.
+
+\end{document}
